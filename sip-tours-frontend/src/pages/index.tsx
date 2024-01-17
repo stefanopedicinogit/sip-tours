@@ -1,9 +1,8 @@
-import React, { useEffect, useRef, useCallback, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function VideoPlayer() {
   return (
     <div className='dark-video'>
-
       <video className='video-lisbon' muted autoPlay loop style={{ zIndex: -1, width: '100%', height: '100vh' }}>
         <source src="/Lisbon.mp4" type="video/mp4" />
       </video>
@@ -20,13 +19,10 @@ export default function Home() {
     const handleResize = (e: any) => {
       setIsMobile(e.matches);
     };
-    // Initial check
+
     handleResize(mediaQuery);
-
-    // Add event listener for changes
     mediaQuery.addEventListener("change", handleResize);
-
-    // Clean up the event listener
+    
     return () => {
       mediaQuery.removeEventListener("change", handleResize);
     };
