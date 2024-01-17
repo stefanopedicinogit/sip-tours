@@ -1,3 +1,4 @@
+import useIsMobile from '@/hooks/useIsMobile';
 import React, { useEffect, useState } from 'react';
 
 function VideoPlayer() {
@@ -12,21 +13,7 @@ function VideoPlayer() {
 }
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 480px)");
-    const handleResize = (e: any) => {
-      setIsMobile(e.matches);
-    };
-
-    handleResize(mediaQuery);
-    mediaQuery.addEventListener("change", handleResize);
-    
-    return () => {
-      mediaQuery.removeEventListener("change", handleResize);
-    };
-  }, []);
+  const isMobile = useIsMobile();
 
   return (
     <>
