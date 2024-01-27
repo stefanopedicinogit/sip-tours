@@ -13,7 +13,7 @@ function VideoPlayer() {
   );
 }
 
-export default function Home() {
+export default function VideoStart() {
   const navigate = useNavigate();
   const isMobile = useIsMobile();
   return (
