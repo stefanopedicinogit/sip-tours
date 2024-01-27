@@ -1,4 +1,5 @@
 import useIsMobile from '@/hooks/useIsMobile';
+import useNavigate from '@/hooks/useNavigate';
 import React, { useEffect, useState } from 'react';
 
 function VideoPlayer() {
@@ -13,8 +14,8 @@ function VideoPlayer() {
 }
 
 export default function Home() {
+  const navigate = useNavigate();
   const isMobile = useIsMobile();
-
   return (
     <>
       {!isMobile ? (
@@ -26,7 +27,7 @@ export default function Home() {
           <h2 className="white" style={{ fontFamily: "Helvetica, Arial, sans-serif", fontSize: "1.7vw", position: 'absolute', top: '35%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1 }}>
             EXPERIENCE PORTUGAL
           </h2>
-          <div className='white' style={{ display: 'flex', flexDirection: 'row', gap: '2.5vw', fontFamily: "Helvetica, Arial, sans-serif", position: 'absolute', top: '70%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1 }}>
+          <div onClick={() => navigate('/home')} className='white' style={{ display: 'flex', flexDirection: 'row', gap: '2.5vw', fontFamily: "Helvetica, Arial, sans-serif", position: 'absolute', top: '70%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, cursor: 'pointer' }}>
             <p style={{ fontSize: "1.5vw", marginTop: "1.5vw" }}>EXPLORE</p>
             <svg style={{ fill: 'white' }} preserveAspectRatio="xMidYMid meet" data-bbox="21.1 72.3 158.1 49.8" xmlns="http://www.w3.org/2000/svg" width="4vw" height="5vw" viewBox="21.1 72.3 158.1 49.8" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
               <g>
@@ -47,7 +48,7 @@ export default function Home() {
                 EXPERIENCE PORTUGAL
               </h2>
             </div>
-            <div className='white' style={{ display: 'flex', flexDirection: 'row', gap: '2.5vw', fontSize: "5vw", fontFamily: "Helvetica, Arial, sans-serif", position: 'absolute', top: '80%', zIndex: 1 }}>
+            <div onClick={() => navigate("/home")} className='white' style={{ display: 'flex', flexDirection: 'row', gap: '2.5vw', fontSize: "5vw", fontFamily: "Helvetica, Arial, sans-serif", position: 'absolute', top: '80%', zIndex: 1, cursor: 'pointer' }}>
               <p style={{ marginTop: "1.5vw" }}>EXPLORE</p>
               <svg style={{ fill: 'white' }} preserveAspectRatio="xMidYMid meet" data-bbox="21.1 72.3 158.1 49.8" xmlns="http://www.w3.org/2000/svg" width="10vw" height="10vw" viewBox="21.1 72.3 158.1 49.8" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                 <g>
