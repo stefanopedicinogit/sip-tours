@@ -1,6 +1,6 @@
 enum ThemeColor {
   white = "#ffffff",
-  whiteHome = "rgba(255,255,255,255)",
+  whiteHome = "#fdfdfd",
   orange = "#ff5100",
   purple = "#e6e7fc",
   darkgray = "#3c3c3c",
@@ -12,6 +12,7 @@ enum ThemeColor {
   gray = "#767575",
   lightblue = "#c6e1f6",
   lightbluehalfopacity = "#c6e1f680",
+  pinkHome = "#c48080"
 }
 
 export default ThemeColor;

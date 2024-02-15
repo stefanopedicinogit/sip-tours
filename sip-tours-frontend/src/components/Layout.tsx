@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import ThemeColor from "./ThemeColor";
 
-// TODO decide if you should make a container with default 2vw top and bottom
-// padding or just any general way to have default top and bottom padding since
-// most pages need to have space between content, header and footer
-
 type LayoutBackgroundProps = {
   $backgroundColor?: ThemeColor;
 };
