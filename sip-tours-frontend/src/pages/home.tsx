@@ -65,9 +65,10 @@ export default function Home() {
                   Our Wine and Food Exclusive Tours & Experiences
                 </h3>
                 <Button
+                  onClick={() => navigate("/services")}
                   style={{ marginTop: "3vw", marginLeft: "1vw" }}
                   className="button-rounded-black clickable">
-                  Book Here
+                  Our Services
                 </Button>
               </Col>
               <Col style={{ width: "50%" }}>

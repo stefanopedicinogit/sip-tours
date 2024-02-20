@@ -8,7 +8,7 @@ import { useState } from "react";
 import useNavigate from "@/hooks/useNavigate";
 
 const NavigationContainer = styled.nav`
-  background-color: ${ThemeColor.whiteHome};
+  background-color: rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
   left: 0;
@@ -22,16 +22,6 @@ const HeaderWrapper = styled.div`
   align-items: center;
   padding: 1rem 0;
   position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px; /* Adjust the height as needed */
-    background-color: rgba(0, 0, 0, 0.1); /* Shadow color */
-  }
 
   @media only screen and (min-width: 768px) {
     padding: 1vw 0;
@@ -61,14 +51,14 @@ const HeaderNavigation = styled.ul`
 
     @media only screen and (min-width: 768px) {
 		  & > li, & > li > a {
-			color: #919191;
+			color: ${ThemeColor.white};
 		  }
 
 		  & > li[data-active="true"] {
 			position: relative;
 
 			& > a {
-				color: ${ThemeColor.darkgray};
+				color: ${ThemeColor.white};
 			}
 
 			&::before {
@@ -94,7 +84,7 @@ const HeaderNavigationItem = styled.li`
   font-weight: 400;
 
   list-style-type: none;
-  color: ${ThemeColor.black};
+  color: ${ThemeColor.white};
   font-size: 1.5vw;
 
   &:hover {
@@ -102,7 +92,7 @@ const HeaderNavigationItem = styled.li`
   }
 
   & > a {
-    color: ${ThemeColor.black};
+    color: ${ThemeColor.white};
     text-decoration: none;
   }
 `;
@@ -117,7 +107,7 @@ const ModalNavigation = styled.div`
   background-color: ${ThemeColor.pinkHome};
 `;
 
-export default function HeaderHome() {
+export default function Header() {
   const [showNavModal, setShowNavModal] = useState<boolean>(false);
   const navigate = useNavigate();
 
@@ -199,7 +189,7 @@ export default function HeaderHome() {
               >
                 <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }} onClick={() => { navigate("/services") }}>
                   What We Do
-                  <svg style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                  <svg  fill="white" style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                     <g>
                       <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
                     </g>
@@ -212,7 +202,7 @@ export default function HeaderHome() {
               >
                 <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }}>
                   Who We Are
-                  <svg style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                  <svg fill="white" style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                     <g>
                       <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
                     </g>
@@ -224,7 +214,7 @@ export default function HeaderHome() {
                 className="button-rounded-black clickable" style={{ marginTop: "0.5vw" }}>
                 Book Now
               </Button>
-              <FontAwesomeIcon className="clickable" icon={faBars} size="2x" onClick={() => { setShowNavModal(!showNavModal) }} />
+              <FontAwesomeIcon color="white" className="clickable" icon={faBars} size="2x" onClick={() => { setShowNavModal(!showNavModal) }} />
             </HeaderNavigation>
           </HeaderWrapper>
         </NavigationContainer>
