@@ -121,7 +121,7 @@ export default function Header() {
                 <ul className="modal-navbar-links clickable">
                   <li style={{ marginBottom: '0vw' }} onClick={() => navigate('/home')}>HOME</li>
                   <li style={{ marginTop: '0vw' }} onClick={() => navigate('/services')}>SERVICES</li>
-                  <li>ABOUT&nbsp;US</li>
+                  <li onClick={() => navigate('/about')}>ABOUT&nbsp;US</li>
                   <li>CONTACT</li>
                 </ul>
               </div>
@@ -175,21 +175,20 @@ export default function Header() {
         <NavigationContainer>
           <HeaderWrapper>
             <Logo
-              src='/Sip_Logo.svg'
+              src='/SIPLogoBianco.svg'
               alt="Logo SIP"
-              style={{height: "5vw", cursor: "pointer", marginLeft:"2vw" }}
+              style={{ height: "2vw", cursor: "pointer", marginLeft: "3vw" }}
               onClick={() => navigate("/home")}
             />
             <HeaderNavigation
               style={{ marginLeft: "auto", marginRight: "5vw" }}
             >
               <HeaderNavigationItem
-                onClick={() => {
-                }}
+                onClick={() => navigate('/services')}
               >
                 <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }} onClick={() => { navigate("/services") }}>
                   What We Do
-                  <svg  fill="white" style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                  <svg fill="white" style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                     <g>
                       <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
                     </g>
@@ -197,8 +196,7 @@ export default function Header() {
                 </div>
               </HeaderNavigationItem>
               <HeaderNavigationItem
-                onClick={() => {
-                }}
+                onClick={() => navigate('/about')}
               >
                 <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }}>
                   Who We Are

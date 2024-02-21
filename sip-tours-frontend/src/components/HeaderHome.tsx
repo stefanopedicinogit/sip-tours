@@ -131,7 +131,7 @@ export default function HeaderHome() {
                 <ul className="modal-navbar-links clickable">
                   <li style={{ marginBottom: '0vw' }} onClick={() => navigate('/home')}>HOME</li>
                   <li style={{ marginTop: '0vw' }} onClick={() => navigate('/services')}>SERVICES</li>
-                  <li>ABOUT&nbsp;US</li>
+                  <li onClick={() => navigate('/about')}>ABOUT&nbsp;US</li>
                   <li>CONTACT</li>
                 </ul>
               </div>
@@ -185,17 +185,16 @@ export default function HeaderHome() {
         <NavigationContainer>
           <HeaderWrapper>
             <Logo
-              src='/Sip_Logo.svg'
+              src='/SIPLogoNero.svg'
               alt="Logo SIP"
-              style={{height: "5vw", cursor: "pointer", marginLeft:"2vw" }}
+              style={{height: "2vw", cursor: "pointer", marginLeft:"3vw" }}
               onClick={() => navigate("/home")}
             />
             <HeaderNavigation
               style={{ marginLeft: "auto", marginRight: "5vw" }}
             >
               <HeaderNavigationItem
-                onClick={() => {
-                }}
+                onClick={() => navigate('/services')}
               >
                 <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }} onClick={() => { navigate("/services") }}>
                   What We Do
@@ -207,8 +206,7 @@ export default function HeaderHome() {
                 </div>
               </HeaderNavigationItem>
               <HeaderNavigationItem
-                onClick={() => {
-                }}
+                onClick={() => navigate('/about')}
               >
                 <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }}>
                   Who We Are
@@ -218,7 +216,6 @@ export default function HeaderHome() {
                     </g>
                   </svg>
                 </div>
-
               </HeaderNavigationItem>
               <Button
                 className="button-rounded-black clickable" style={{ marginTop: "0.5vw" }}>

@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";
+import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
 import useNavigate from "@/hooks/useNavigate";
@@ -16,10 +17,10 @@ export default function Services() {
                     <>
 
                         <Layout fullWidth backgroundColor={ThemeColor.whiteHome}>
-                            <Header/>
+                            <Header />
                             <Image
                                 src="/Services1.webp"
-                                alt="Sip Tours Home Page"
+                                alt="Sip Tours Services Page"
                                 style={{ width: "100%", height: "auto" }}
                             >
                             </Image>
@@ -36,13 +37,63 @@ export default function Services() {
                             <Row style={{ width: "92vw", marginInline: "auto", display: "flex", flexDirection: "row", marginTop: "2vw" }}>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}></Col>
                                 <Col style={{ width: "70%", display: "flex", flexDirection: "column" }}>
-                                <p className="p-home">At Sip Tours, we strive to provide much more than just wine tours. We offer a range of tasting experiences and tailor-made adventures that are designed to suit your specific interests and preferences. Whether you're interested in exploring the historic streets of Lisbon, discovering hidden wine bars, or indulging in a private group tasting, we're here to create a unique and unforgettable experience just for you. Our team is passionate about providing exceptional service and ensuring that every detail is taken care of — from start to finish. So, if you're looking for a personalized wine experience in Lisbon, look no further than us. We're here to make your wine dreams come true!</p>
+                                    <p className="p-home">At Sip Tours, we strive to provide much more than just wine tours. We offer a range of tasting experiences and tailor-made adventures that are designed to suit your specific interests and preferences. Whether you're interested in exploring the historic streets of Lisbon, discovering hidden wine bars, or indulging in a private group tasting, we're here to create a unique and unforgettable experience just for you. Our team is passionate about providing exceptional service and ensuring that every detail is taken care of — from start to finish. So, if you're looking for a personalized wine experience in Lisbon, look no further than us. We're here to make your wine dreams come true!</p>
                                 </Col>
                             </Row>
-                            <Row style={{ marginTop: "4vw", marginBottom: "4vw", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto" }}>
-                                <Col></Col>
-                                <Col></Col>
+                            <Row style={{ marginTop: "4vw", marginBottom: "5vw", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", gap: "2vw" }}>
+                                <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
+                                    <Image
+                                        src="/Home3.webp"
+                                        alt="Sip Tours Home Page"
+                                        style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
+                                    />
+                                    <p>
+                                        Private Wine Tasting
+                                    </p>
+                                </Col>
+                                <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
+                                    <Image
+                                        src="/Home3.webp"
+                                        alt="Sip Tours Home Page"
+                                        style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
+                                    />
+                                    <p>
+                                        Tailor Made Experience
+                                    </p>
+                                </Col>
                             </Row>
+                            <Row style={{ marginTop: "4vw", marginBottom: "5vw", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", gap: "2vw" }}>
+                                <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
+                                    <Image
+                                        src="/Home3.webp"
+                                        alt="Sip Tours Home Page"
+                                        style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
+                                    />
+                                    <p>
+                                        Glimpse of Sip
+                                    </p>
+                                </Col>
+                                <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
+                                    <Image
+                                        src="/Home3.webp"
+                                        alt="Sip Tours Home Page"
+                                        style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
+                                    />
+                                    <p>
+                                        Bacchus Lisboa
+                                    </p>
+                                </Col>
+                            </Row>
+                            <Row style={{ display: "flex", flexDirection: "row", width: "92vw", marginBottom: "8vw"}}>
+                                <div style={{ marginLeft: "auto", marginRight: "auto" }}>
+                                    <Button
+                                        style={{ marginLeft: "8.5vw" }}
+                                        className="button-rounded-black clickable">
+                                        Talk With Us
+                                    </Button>
+                                </div>
+                            </Row>
+                            <PreFooter />
                         </Layout>
                     </>
                 )
