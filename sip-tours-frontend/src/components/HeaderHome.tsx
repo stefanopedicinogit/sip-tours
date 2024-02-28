@@ -132,7 +132,7 @@ export default function HeaderHome() {
                   <li style={{ marginBottom: '0vw' }} onClick={() => navigate('/home')}>HOME</li>
                   <li style={{ marginTop: '0vw' }} onClick={() => navigate('/services')}>SERVICES</li>
                   <li onClick={() => navigate('/about')}>ABOUT&nbsp;US</li>
-                  <li>CONTACT</li>
+                  <li onClick={() => navigate('/contact')}>CONTACT</li>
                 </ul>
               </div>
             </Container>
