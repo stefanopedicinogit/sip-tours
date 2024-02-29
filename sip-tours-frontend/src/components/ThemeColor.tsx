@@ -12,7 +12,12 @@ enum ThemeColor {
   gray = "#767575",
   lightblue = "#c6e1f6",
   lightbluehalfopacity = "#c6e1f680",
-  pinkHome = "#c48080"
+  pinkHome = "#c48080",
+  verdeacqua =   "#8AB9D4",
+  blucobalto = "#6699CC",
+  greenishblue = "#5F9EA0",
+  verde= "#77DD77",
+  verdognolo = "#87b93e"
 }
 
 export default ThemeColor;

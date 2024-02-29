@@ -6,6 +6,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Layout from "./Layout";
 import { useState } from "react";
 import useNavigate from "@/hooks/useNavigate";
+import useIsMobile from "@/hooks/useIsMobile";
 
 const NavigationContainer = styled.nav`
   background-color: ${ThemeColor.whiteHome};
@@ -120,9 +121,13 @@ const ModalNavigation = styled.div`
 export default function HeaderHome() {
   const [showNavModal, setShowNavModal] = useState<boolean>(false);
   const navigate = useNavigate();
+  const isMobile = useIsMobile();
 
   return (
     <>
+    {isMobile ? (
+      <></>
+    ) : (
       <Layout>
         <ModalNavigation hidden={!showNavModal}>
           <Container style={{ display: "flex", flexDirection: "row" }}>
@@ -187,24 +192,12 @@ export default function HeaderHome() {
             <Logo
               src='/SIPLogoNero.svg'
               alt="Logo SIP"
-              style={{height: "2vw", cursor: "pointer", marginLeft:"3vw" }}
+              style={{ height: "2vw", cursor: "pointer", marginLeft: "3vw" }}
               onClick={() => navigate("/home")}
             />
             <HeaderNavigation
               style={{ marginLeft: "auto", marginRight: "5vw" }}
             >
-              <HeaderNavigationItem
-                onClick={() => navigate('/services')}
-              >
-                <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }} onClick={() => { navigate("/services") }}>
-                  What We Do
-                  <svg style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
-                    <g>
-                      <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
-                    </g>
-                  </svg>
-                </div>
-              </HeaderNavigationItem>
               <HeaderNavigationItem
                 onClick={() => navigate('/about')}
               >
@@ -217,6 +210,19 @@ export default function HeaderHome() {
                   </svg>
                 </div>
               </HeaderNavigationItem>
+              <HeaderNavigationItem
+                onClick={() => navigate('/services')}
+              >
+                <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }} onClick={() => { navigate("/services") }}>
+                  What We Do
+                  <svg style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                    <g>
+                      <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
+                    </g>
+                  </svg>
+                </div>
+              </HeaderNavigationItem>
+
               <Button
                 className="button-rounded-black clickable" style={{ marginTop: "0.5vw" }}>
                 Book Now
@@ -226,6 +232,7 @@ export default function HeaderHome() {
           </HeaderWrapper>
         </NavigationContainer>
       </Layout>
+    )}
     </>
   )
 }

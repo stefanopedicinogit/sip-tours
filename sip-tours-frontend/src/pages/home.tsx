@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import HeaderHome from "@/components/HeaderHome";
 import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
@@ -12,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      {isMobile ? (<></>) :
+      {isMobile ? (<><HeaderHome/></>) :
         (
           <>
           <HeaderHome/>
@@ -49,6 +50,7 @@ export default function Home() {
             </Row>
             <Row style={{ width: "92.5vw", marginTop: "1vw", marginInline: "auto", marginBottom: "6vw" }}>
               <Button
+                onClick={() => navigate("/about")}
                 className="underlined clickable p-home">
                 View More
               </Button>
@@ -110,6 +112,7 @@ export default function Home() {
                   <Col style={{ marginTop: "110%", width: "50%", marginLeft: "2.5vw" }}>
                     <h1 className="h1-home" style={{ fontWeight: "400", lineHeight: "1" }}>GLIMPSE OF SIP</h1>
                     <Button
+                      onClick={() => navigate("/tours/glimpseofsip")}
                       className="underlined clickable p-home">
                       View More
                     </Button>

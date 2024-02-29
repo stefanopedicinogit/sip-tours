@@ -1,6 +1,8 @@
+import useNavigate from "@/hooks/useNavigate";
 import { Col, Row, Button } from "react-bootstrap";
 
 export default function PreFooter () {
+  const navigate = useNavigate();
 return(
     <>
     <Row style={{ width: "95vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom:"10vw"}}>
@@ -39,6 +41,7 @@ return(
       </Row>
       <Row style={{ display: "flex", flexDirection: "row" }}>
         <Button
+          onClick={() => navigate("https://api.whatsapp.com/send?phone=351912247175&text=%28Enrico+Sip+Tours%29+Hello%21+I+would+like+to+schedule+a+tour")}
           className="clickable h3-home">
           WhatsApp
         </Button>
