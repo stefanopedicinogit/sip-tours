@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 893.66 632.68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3f3e3e;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Icon_feather-menu" data-name="Icon feather-menu">
+    <path class="cls-1" d="m838.36,371.64H55.3c-30.55,0-55.3-24.77-55.3-55.3s24.75-55.3,55.3-55.3h783.06c30.55,0,55.3,24.77,55.3,55.3s-24.75,55.3-55.3,55.3Z"/>
+    <path class="cls-1" d="m838.36,110.61H55.3C24.75,110.61,0,85.84,0,55.3S24.75,0,55.3,0h783.06c30.55,0,55.3,24.77,55.3,55.3s-24.75,55.3-55.3,55.3Z"/>
+    <path class="cls-1" d="m838.36,632.68H55.3c-30.55,0-55.3-24.77-55.3-55.3s24.75-55.3,55.3-55.3h783.06c30.55,0,55.3,24.77,55.3,55.3s-24.75,55.3-55.3,55.3Z"/>
+  </g>
+</svg>
