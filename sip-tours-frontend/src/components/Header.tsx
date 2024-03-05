@@ -6,6 +6,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Layout from "./Layout";
 import { useState } from "react";
 import useNavigate from "@/hooks/useNavigate";
+import useIsMobile from "@/hooks/useIsMobile";
 
 const NavigationContainer = styled.nav`
   background-color: rgba(0, 0, 0, 0.25);
@@ -107,117 +108,261 @@ const ModalNavigation = styled.div`
   background-color: ${ThemeColor.pinkHome};
 `;
 
+//MOBILE
+// const MobileHeaderDivider = styled.div`
+//   width: 100vw;
+//   border-bottom: 1px solid white;
+
+//   @media only screen and (min-width: 768px) {
+//     border: none;
+//   }
+// `;
+
+const LogoMobile = styled.img`
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+    height: 7vw;
+  }
+`;
+
+const MenuOpen = styled.img`
+  width: 7vw;
+  margin-left: 0.5rem;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const MenuDrawer = styled.div<{ $open: boolean }>`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: ${(props) => (props.$open ? "100vw" : "0")};
+  height: 100vh;
+  transition: width 0.2s ease-in-out;
+  z-index: 1000;
+  overflow: hidden;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const MenuDrawerWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
+
+const MenuLogo = styled.img`
+  height: 7vw;
+`;
+
+const MenuDrawerNavigation = styled.ul`
+  margin: auto;
+`;
+
+const MenuDrawerNavigationItem = styled.li`
+  font-size: 7vw;
+  font-weight: 700;
+  margin: 1.5rem;
+  list-style-type: square;
+  color: ${ThemeColor.black};
+
+  & > a {
+    color: ${ThemeColor.black};
+    text-decoration: none;
+  }
+`;
+
+const MenuClose = styled.img`
+  width: 7vw;
+`;
+
 export default function Header() {
   const [showNavModal, setShowNavModal] = useState<boolean>(false);
   const navigate = useNavigate();
+  const isMobile = useIsMobile();
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
     <>
-      <Layout>
-        <ModalNavigation hidden={!showNavModal}>
-          <Container style={{ display: "flex", flexDirection: "row" }}>
-            <Container style={{ marginTop: "12vw", display: "flex", flexDirection: "row" }}>
-              <div style={{ display: 'flex', flexDirection: 'column', fontFamily: "Helvetica, Arial, sans-serif", marginLeft: "12vw" }}>
-                <ul className="modal-navbar-links clickable">
-                  <li style={{ marginBottom: '0vw' }} onClick={() => navigate('/home')}>HOME</li>
-                  <li style={{ marginTop: '0vw' }} onClick={() => navigate('/services')}>SERVICES</li>
-                  <li onClick={() => navigate('/about')}>ABOUT&nbsp;US</li>
-                  <li onClick={() => navigate('/contact')}>CONTACT</li>
+      {isMobile ? (
+        <>
+          <MenuDrawer $open={drawerOpen}>
+            <Layout backgroundColor={ThemeColor.gray}>
+              <MenuDrawerWrapper>
+                <HeaderWrapper>
+                  <MenuLogo
+                    src='./SIPLogoNero.svg'
+                    alt="Logo BeTalent."
+                    onClick={() => {
+                      navigate("/home");
+                    }}
+                  />
+                  <MenuClose
+                    style={{ fill: 'black', color: 'black' }}
+                    src='./close.svg'
+                    alt="Icona chiudi menù."
+                    onClick={() => {
+                      setDrawerOpen(false);
+                    }}
+                  />
+                </HeaderWrapper>
+                <MenuDrawerNavigation>
+                  <MenuDrawerNavigationItem>
+                    <button onClick={() => navigate("/home")}>Home</button>
+                  </MenuDrawerNavigationItem>
+                  <MenuDrawerNavigationItem>
+                    <button onClick={() => navigate("/about")}>About Us</button>
+                  </MenuDrawerNavigationItem>
+                  <MenuDrawerNavigationItem>
+                    <button onClick={() => navigate("/contact")}>Contact</button>
+                  </MenuDrawerNavigationItem>
+                  <MenuDrawerNavigationItem>
+                    <button onClick={() => navigate("/services")}>Services</button>
+                  </MenuDrawerNavigationItem>
+                  <MenuDrawerNavigationItem>
+                    <button onClick={() => navigate("/login")}>Brochure</button>
+                  </MenuDrawerNavigationItem>
+                </MenuDrawerNavigation>
+              </MenuDrawerWrapper>
+            </Layout>
+          </MenuDrawer>
+          <NavigationContainer>
+            <Layout>
+              <HeaderWrapper>
+                <LogoMobile
+                  src='/SIPLogoBianco.svg'
+                  alt="Logo betalent."
+                  onClick={() => navigate("/home")}
+                />
+                <MenuOpen
+                  src='./menu.svg'
+                  alt="Icona apri menù."
+                  width={32}
+                  height={32}
+                  style={{ fill: 'white', color: 'white' }}
+                  onClick={() => {
+                    setDrawerOpen(true);
+                  }}
+                />
+              </HeaderWrapper>
+            </Layout>
+          </NavigationContainer>
+        </>
+      ) : (
+        <Layout>
+          <ModalNavigation hidden={!showNavModal}>
+            <Container style={{ display: "flex", flexDirection: "row" }}>
+              <Container style={{ marginTop: "12vw", display: "flex", flexDirection: "row" }}>
+                <div style={{ display: 'flex', flexDirection: 'column', fontFamily: "Helvetica, Arial, sans-serif", marginLeft: "12vw" }}>
+                  <ul className="modal-navbar-links clickable">
+                    <li style={{ marginBottom: '0vw' }} onClick={() => navigate('/home')}>HOME</li>
+                    <li onClick={() => navigate('/about')}>ABOUT&nbsp;US</li>
+                    <li style={{ marginTop: '0vw' }} onClick={() => navigate('/services')}>SERVICES</li>
+                    <li onClick={() => navigate('/contact')}>CONTACT</li>
+                  </ul>
+                </div>
+              </Container>
+              <Container style={{ marginTop: "14vw", marginLeft: "18vw" }}>
+                <div style={{ display: 'flex', flexDirection: 'column', fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw", marginBottom: "3vw" }}>
+                  <h5>Working&nbsp;all&nbsp;around&nbsp;Portugal</h5>
+                  <h5>Based&nbsp;in&nbsp;Lisbon</h5>
+                </div>
+                <span style={{ textDecoration: 'underline', fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw" }}>info@sip-tours.com</span>
+                <ul style={{ fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw", marginTop: "3vw" }} className="clickable">
+                  <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
+                    <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                      <g>
+                        <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
+                      </g>
+                    </svg>
+                    Book Now
+                  </li>
+                  <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
+                    <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                      <g>
+                        <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
+                      </g>
+                    </svg>
+                    Facebook
+                  </li>
+                  <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
+                    <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                      <g>
+                        <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
+                      </g>
+                    </svg>
+                    Instagram
+                  </li>
+                  <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
+                    <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                      <g>
+                        <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
+                      </g>
+                    </svg>
+                    Whatsapp
+                  </li>
                 </ul>
-              </div>
+              </Container>
+              <Container style={{ marginTop: "8vw", marginLeft: "10vw", marginRight: "5vw" }}>
+                <FontAwesomeIcon style={{ color: 'white' }} className="clickable" icon={faTimes} size="3x" onClick={() => { setShowNavModal(!showNavModal) }} />
+              </Container>
             </Container>
-            <Container style={{ marginTop: "14vw", marginLeft: "18vw" }}>
-              <div style={{ display: 'flex', flexDirection: 'column', fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw", marginBottom: "3vw" }}>
-                <h5>Working&nbsp;all&nbsp;around&nbsp;Portugal</h5>
-                <h5>Based&nbsp;in&nbsp;Lisbon</h5>
-              </div>
-              <span style={{ textDecoration: 'underline', fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw" }}>info@sip-tours.com</span>
-              <ul style={{ fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw", marginTop: "3vw" }} className="clickable">
-                <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
-                  <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
-                    <g>
-                      <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
-                    </g>
-                  </svg>
+          </ModalNavigation>
+          <NavigationContainer>
+            <HeaderWrapper>
+              <Logo
+                src='/SIPLogoBianco.svg'
+                alt="Logo SIP"
+                style={{ height: "2vw", cursor: "pointer", marginLeft: "3vw" }}
+                onClick={() => navigate("/home")}
+              />
+              <HeaderNavigation
+                style={{ marginLeft: "auto", marginRight: "5vw" }}
+              >
+                <HeaderNavigationItem
+                  onClick={() => navigate('/about')}
+                >
+                  <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }}>
+                    Who We Are
+                    <svg fill="white" style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                      <g>
+                        <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                </HeaderNavigationItem>
+                <HeaderNavigationItem
+                  onClick={() => navigate('/services')}
+                >
+                  <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }} onClick={() => { navigate("/services") }}>
+                    What We Do
+                    <svg fill="white" style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                      <g>
+                        <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
+                      </g>
+                    </svg>
+                  </div>
+                </HeaderNavigationItem>
+
+                <Button
+                  className="button-rounded-black clickable" style={{ marginTop: "0.5vw" }}>
                   Book Now
-                </li>
-                <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
-                  <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
-                    <g>
-                      <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
-                    </g>
-                  </svg>
-                  Facebook
-                </li>
-                <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
-                  <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
-                    <g>
-                      <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
-                    </g>
-                  </svg>
-                  Instagram
-                </li>
-                <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
-                  <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
-                    <g>
-                      <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
-                    </g>
-                  </svg>
-                  Whatsapp
-                </li>
-              </ul>
-            </Container>
-            <Container style={{ marginTop: "8vw", marginLeft: "10vw", marginRight: "5vw" }}>
-              <FontAwesomeIcon style={{ color: 'white' }} className="clickable" icon={faTimes} size="3x" onClick={() => { setShowNavModal(!showNavModal) }} />
-            </Container>
-          </Container>
-        </ModalNavigation>
-        <NavigationContainer>
-          <HeaderWrapper>
-            <Logo
-              src='/SIPLogoBianco.svg'
-              alt="Logo SIP"
-              style={{ height: "2vw", cursor: "pointer", marginLeft: "3vw" }}
-              onClick={() => navigate("/home")}
-            />
-            <HeaderNavigation
-              style={{ marginLeft: "auto", marginRight: "5vw" }}
-            >
-              <HeaderNavigationItem
-                onClick={() => navigate('/about')}
-              >
-                <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }}>
-                  Who We Are
-                  <svg fill="white" style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
-                    <g>
-                      <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
-                    </g>
-                  </svg>
-                </div>
-
-              </HeaderNavigationItem>
-              <HeaderNavigationItem
-                onClick={() => navigate('/services')}
-              >
-                <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }} onClick={() => { navigate("/services") }}>
-                  What We Do
-                  <svg fill="white" style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
-                    <g>
-                      <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
-                    </g>
-                  </svg>
-                </div>
-              </HeaderNavigationItem>
-
-              <Button
-                className="button-rounded-black clickable" style={{ marginTop: "0.5vw" }}>
-                Book Now
-              </Button>
-              <FontAwesomeIcon color="white" className="clickable" icon={faBars} size="2x" onClick={() => { setShowNavModal(!showNavModal) }} />
-            </HeaderNavigation>
-          </HeaderWrapper>
-        </NavigationContainer>
-      </Layout>
+                </Button>
+                <FontAwesomeIcon color="white" className="clickable" icon={faBars} size="2x" onClick={() => { setShowNavModal(!showNavModal) }} />
+              </HeaderNavigation>
+            </HeaderWrapper>
+          </NavigationContainer>
+        </Layout>
+      )}
     </>
   )
 }

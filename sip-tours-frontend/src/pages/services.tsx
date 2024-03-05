@@ -12,7 +12,104 @@ export default function Services() {
 
     return (
         <>
-            {isMobile ? (<></>) :
+            {isMobile ? (
+                <>
+                    <Layout fullWidth backgroundColor={ThemeColor.whiteHome}>
+                        <Header />
+                        <Image
+                            src="/ServicesMobile1.webp"
+                            alt="Sip Tours About Page"
+                            style={{ width: "100%", height: "auto" }}
+                        />
+                        <Row style={{ marginTop: "5vh", width: "92vw", marginInline: "auto", marginBottom: "20vh" }}>
+                            <h1 className="h1-home-mobile">OUR SERVICES</h1>
+                            <div style={{ marginTop: "3vh" }}>
+                                <svg preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                                    <g>
+                                        <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p className="p-home-mobile" style={{ fontSize: "1.95vh", marginTop: "8vh", marginBottom: "8vh" }}>At Sip Tours, we strive to provide much more than just wine tours. We offer a range of tasting experiences and tailor-made adventures that are designed to suit your specific interests and preferences. Whether you're interested in exploring the historic streets of Lisbon, discovering hidden wine bars, or indulging in a private group tasting, we're here to create a unique and unforgettable experience just for you. Our team is passionate about providing exceptional service and ensuring that every detail is taken care of — from start to finish. So, if you're looking for a personalized wine experience in Lisbon, look no further than us. We're here to make your wine dreams come true!</p>
+                        </Row>
+                        <Row>
+                            <Image
+                                src="/ServicesMobile1.webp"
+                                alt="Sip Tours About Page"
+                                style={{ width: "95vw", marginInline: "auto", height: "auto" }}
+                            />
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                                <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Private Wein Tasting</p>
+                            </Row>
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                                <Button
+                                    className="button-rounded-black-mobile clickable">
+                                    Book Now
+                                </Button>
+                            </Row>
+                        </Row>
+                        <Row>
+                            <Image
+                                src="/ServicesMobile1.webp"
+                                alt="Sip Tours About Page"
+                                style={{ width: "95vw", marginInline: "auto", height: "auto" }}
+                            />
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                                <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Tailor Made Experience</p>
+                            </Row>
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                                <Button
+                                    className="button-rounded-black-mobile clickable">
+                                    Book Now
+                                </Button>
+                            </Row>
+                        </Row>
+                        <Row>
+                            <Image
+                                src="/ServicesMobile1.webp"
+                                alt="Sip Tours About Page"
+                                style={{ width: "95vw", marginInline: "auto", height: "auto" }}
+                            />
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                                <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Glimpse Of Sip</p>
+                            </Row>
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                                <Button
+                                    className="button-rounded-black-mobile clickable">
+                                    Book Now
+                                </Button>
+                            </Row>
+                        </Row>
+                        <Row>
+                            <Image
+                                src="/ServicesMobile1.webp"
+                                alt="Sip Tours About Page"
+                                style={{ width: "95vw", marginInline: "auto", height: "auto" }}
+                            />
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                                <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Bacchus Lisboa</p>
+                            </Row>
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                                <Button
+                                    className="button-rounded-black-mobile clickable">
+                                    Book Now
+                                </Button>
+                            </Row>
+                        </Row>
+                        <Row>
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "column", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                                <h1 className="h3-home-mobile" style={{ marginBottom: "3vh" }}>WANT TO KNOW MORE?</h1>
+                                <Button
+                                    className="button-rounded-black-mobile clickable">
+                                    Talk With Us
+                                </Button>
+                            </Row>
+                        </Row>
+                        <PreFooter />
+
+                    </Layout>
+                </>
+            ) :
                 (
                     <>
 
@@ -84,7 +181,7 @@ export default function Services() {
                                     </p>
                                 </Col>
                             </Row>
-                            <Row style={{ display: "flex", flexDirection: "row", width: "92vw", marginBottom: "8vw"}}>
+                            <Row style={{ display: "flex", flexDirection: "row", width: "92vw", marginBottom: "8vw" }}>
                                 <div style={{ marginLeft: "auto", marginRight: "auto" }}>
                                     <Button
                                         style={{ marginLeft: "8.5vw" }}

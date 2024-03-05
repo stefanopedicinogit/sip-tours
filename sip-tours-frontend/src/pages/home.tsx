@@ -182,7 +182,9 @@ export default function Home() {
                     <Col style={{ marginTop: "80%", width: "50%" }}>
                       <h1 className="h1-home" style={{ fontWeight: "400", lineHeight: "1" }}>BACCHUS LISBOA</h1>
                       <Button
-                        className="underlined clickable p-home">
+                        className="underlined clickable p-home"
+                        onClick={() => navigate("/tours/bacchuslisboa")}
+                      >
                         View More
                       </Button>
                       <div style={{ marginTop: "2vw" }}>
@@ -236,7 +238,9 @@ export default function Home() {
                 <Col style={{ width: "100%", marginLeft: "3vw", marginTop: "2vw" }}>
                   <h1 className="h1-home" style={{ fontWeight: "400", lineHeight: "1" }}>TRIP TO<br /> SINTRA</h1>
                   <Button
-                    className="underlined clickable p-home">
+                    className="underlined clickable p-home"
+                    onClick={() => navigate("/tours/sintra")}
+                  >
                     View More
                   </Button>
                 </Col>

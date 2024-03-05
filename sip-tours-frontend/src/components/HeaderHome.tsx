@@ -214,6 +214,9 @@ export default function HeaderHome() {
                   <MenuLogo
                     src='./SIPLogoNero.svg'
                     alt="Logo BeTalent."
+                    onClick={() => {
+                      navigate("/home");
+                    }}
                   />
                   <MenuClose
                     style={{ fill: 'black', color: 'black' }}
@@ -225,6 +228,9 @@ export default function HeaderHome() {
                   />
                 </HeaderWrapper>
                 <MenuDrawerNavigation>
+                  <MenuDrawerNavigationItem>
+                    <button onClick={() => navigate("/home")}>Home</button>
+                  </MenuDrawerNavigationItem>
                   <MenuDrawerNavigationItem>
                     <button onClick={() => navigate("/about")}>About Us</button>
                   </MenuDrawerNavigationItem>
