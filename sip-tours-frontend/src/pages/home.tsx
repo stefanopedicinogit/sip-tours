@@ -41,8 +41,9 @@ export default function Home() {
             </Row>
             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "18vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
               <Button
-                className="button-rounded-black-mobile clickable">
-                Contact Us
+                className="button-rounded-black-mobile clickable"
+                onClick={() => navigate("/about")}>
+                About Us
               </Button>
             </Row>
             <Row style={{ width: "92vw", marginInline: "auto", marginBottom: "3vh" }}>
@@ -51,7 +52,8 @@ export default function Home() {
             </Row>
             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "18vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
               <Button
-                className="button-rounded-black-mobile clickable">
+                className="button-rounded-black-mobile clickable"
+                onClick={() => navigate("/services")}>
                 Our Services
               </Button>
             </Row>
