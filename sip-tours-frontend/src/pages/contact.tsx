@@ -5,9 +5,11 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
+import useNavigate from "@/hooks/useNavigate";
 import { Button, Col, Image, Row } from "react-bootstrap";
 
 export default function Contact() {
+    const navigate = useNavigate();
     const isMobile = useIsMobile();
 
     return (
@@ -40,9 +42,17 @@ export default function Contact() {
                             </p>
                             <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "8vh" }}>
                                 {"We pride ourselves on our personalized approach, and we're here to help with almost anything you need. So don't hesitate to get in touch — we're excited to connect with you and share our love for Portugal's wine and food culture!"}</p>
-                            <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "8vh" }}>
+                            <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "4vh" }}>
                                 Fill the form and we will get back to you as soon as possible. Or you can click on the WhatsApp button below to call us or send a message whenever you want!
                             </p>
+                        </Row>
+                        <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "10vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                            <Button
+                                className="button-rounded-black-mobile clickable"
+                                onClick={() => navigate("https://api.whatsapp.com/send?phone=351912247175&text=%28Enrico+Sip+Tours%29+Hello%21+I+would+like+to+schedule+a+tour")}
+                            >
+                                WhatsApp
+                            </Button>
                         </Row>
                         <FormContactMobile />
                         <div style={{ marginTop: "5vh" }}>
@@ -76,7 +86,11 @@ export default function Contact() {
                                         </svg>
                                     </div>
                                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignContent: "center", alignItems: "center" }}>
-                                        <Button className="button-rounded-black clickable" style={{ width: "15vw" }}>WhatsApp</Button>
+                                        <Button
+                                            className="button-rounded-black clickable"
+                                            style={{ width: "15vw" }}
+                                            onClick={() => navigate("https://api.whatsapp.com/send?phone=351912247175&text=%28Enrico+Sip+Tours%29+Hello%21+I+would+like+to+schedule+a+tour")}
+                                        >WhatsApp</Button>
                                     </div>
                                 </Col>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
