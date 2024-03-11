@@ -69,3 +69,14 @@ body {
     color: white;
     outline: none;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+* {
+    overflow-y: scroll; /* Add the scrollbar */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  *::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  }

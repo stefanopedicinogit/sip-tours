@@ -290,7 +290,11 @@ export default function HeaderHome() {
                 </div>
                 <span style={{ textDecoration: 'underline', fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw" }}>info@sip-tours.com</span>
                 <ul style={{ fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw", marginTop: "3vw" }} className="clickable">
-                  <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
+                  <li
+                    style={{ display: "flex", flexDirection: "row", gap: "2vw" }}
+                    className="clickable"
+                    onClick={() => navigate('/contact')}
+                  >
                     <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                       <g>
                         <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
@@ -298,7 +302,11 @@ export default function HeaderHome() {
                     </svg>
                     Book Now
                   </li>
-                  <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
+                  <li
+                    style={{ display: "flex", flexDirection: "row", gap: "2vw" }}
+                    className="clickable"
+                    onClick={() => navigate('https://www.facebook.com/share/jdtoj6Nf6HiWNen7/')}
+                  >
                     <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                       <g>
                         <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
@@ -306,7 +314,11 @@ export default function HeaderHome() {
                     </svg>
                     Facebook
                   </li>
-                  <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
+                  <li
+                    style={{ display: "flex", flexDirection: "row", gap: "2vw" }}
+                    className="clickable"
+                    onClick={() => navigate("https://www.instagram.com/sip.wine.lisbon/")}
+                  >
                     <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                       <g>
                         <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
@@ -314,7 +326,11 @@ export default function HeaderHome() {
                     </svg>
                     Instagram
                   </li>
-                  <li style={{ display: "flex", flexDirection: "row", gap: "2vw" }}>
+                  <li
+                    style={{ display: "flex", flexDirection: "row", gap: "2vw" }}
+                    className="clickable"
+                    onClick={() => navigate("https://api.whatsapp.com/send?phone=351912247175&text=%28Enrico+Sip+Tours%29+Hello%21+I+would+like+to+schedule+a+tour")}
+                  >
                     <svg style={{ transform: "rotate(90deg)", fill: "white" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                       <g>
                         <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
@@ -366,7 +382,10 @@ export default function HeaderHome() {
                 </HeaderNavigationItem>
 
                 <Button
-                  className="button-rounded-black clickable" style={{ marginTop: "0.5vw" }}>
+                  className="button-rounded-black clickable" 
+                  style={{ marginTop: "0.5vw" }}
+                  onClick={() => navigate('/contact')}
+                  >
                   Book Now
                 </Button>
                 <FontAwesomeIcon className="clickable" icon={faBars} size="2x" onClick={() => { setShowNavModal(!showNavModal) }} />

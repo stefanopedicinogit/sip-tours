@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { Fade } from 'react-awesome-reveal';
 
-export default function GlipseOfSip() {
+export default function Lisboat() {
     const navigate = useNavigate();
     const isMobile = useIsMobile();
 
@@ -27,8 +27,8 @@ export default function GlipseOfSip() {
                     <>
                         <Layout fullWidth fullHeight>
                             <div className="gray-opacity">
-                                <Col style={{ width: "50vw" }}>
-                                    <h1 className="h1-home transition-image roboto" style={{color: 'whitesmoke', zIndex: 10, top: "14vw", marginLeft: "5vw", position: "relative", lineHeight: "3.75vw" }}>A GLIMPSE OF SIP</h1>
+                                <Col style={{ width: "40vw" }}>
+                                    <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "5vw", position: "relative", lineHeight: "3.75vw" }}>LISBOAT & SIP</h1>
                                 </Col>
                                 <Fade triggerOnce duration={9000}>
                                     <Image
@@ -46,12 +46,12 @@ export default function GlipseOfSip() {
                                 </Fade>
                             </div>
                         </Layout>
-                            <Layout fullWidth backgroundColor={ThemeColor.blucobalto} style={{ paddingBottom: "5vw" }}>
+                            <Layout fullWidth backgroundColor={ThemeColor.violet} style={{ paddingBottom: "5vw" }}>
                                 <Header />
                                 <div style={{ position: "relative", height: "7vw" }}></div>
                                 <Row style={{ width: "92vw", marginInline: "auto", display: "flex", flexDirection: "row", gap: "10vw" }}>
                                     <Col style={{ display: "flex", flexDirection: "column", width: "70%" }}>
-                                        <h1 className="h1-home roboto" style={{ fontSize: "3.55vw", color: "white", lineHeight: "3.75vw" }}>A GLIMPSE OF SIP</h1>
+                                        <h1 className="h1-home roboto" style={{ fontSize: "3.55vw", color: "white", lineHeight: "3.75vw" }}>LISBOAT & SIP</h1>
                                         <div style={{ marginTop: "1.5vw", marginBottom: "3vw" }}>
                                             <svg fill="white" preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                                                 <g>
@@ -62,11 +62,11 @@ export default function GlipseOfSip() {
                                         <Row style={{ display: "flex", flexDirection: "row", width: "100%", gap: "2vw", marginBottom: "3vw" }}>
                                             <Col style={{ width: "100%", display: "flex", flexDirection: "column", color: "white" }}>
                                                 <p style={{ textDecoration: "underline", marginBottom: "1vw" }}>Size</p>
-                                                <p>Up to 20 people / Private groups</p>
+                                                <p>Limited to 15 people / Private groups</p>
                                             </Col>
                                             <Col style={{ width: "100%", display: "flex", flexDirection: "column", color: "white" }}>
                                                 <p style={{ textDecoration: "underline", marginBottom: "1vw" }}>Location</p>
-                                                <p>Príncipe Real, <br /> Avenida de Liberdade — Lisbon</p>
+                                                <p>Cais da Princesa (Belém Tower), Lisboat Torre Belém</p>
                                             </Col>
                                             <Col style={{ width: "100%", display: "flex", flexDirection: "column", color: "white" }}>
                                                 <p style={{ textDecoration: "underline", marginBottom: "1vw" }}>Duration</p>
@@ -85,9 +85,9 @@ export default function GlipseOfSip() {
                                         </Row>
                                     </Col>
                                     <Col style={{ display: "flex", flexDirection: "column", width: "100%" }}>
-                                        <h3 style={{ color: "white", textDecoration: "underline", marginBottom: "2vw" }} className="h3-home roboto">About</h3>
-                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Are you ready to indulge in a truly unforgettable experience in Lisbon? Look no further than our Glimpse of Sip Tour! From the romantic and bohemian neighborhoods of Príncipe Real to the stunning Avenida de Liberdade, we'll take you on a journey through Portugal's most unique wine bars and exquisite eateries. With a focus on insight and history, you'll have the opportunity to taste a variety of wines, including Vinho Verde, white from the Açores Islands, and red from Bairrada, all perfectly paired with traditional Portuguese petiscos (tapas). </p>
-                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">The culinary journey doesn't stop there. We will visit the luxurious Palácio da Anunciada, a stunning 5-star hotel built in 1533, where you'll be transported to an exclusive area of the city where you can savor typical Portuguese food such as octopus and squid croquettes, local cheeses, and artisanal sausages, all topped off with famous aged Portuguese Tawny Port. Don't miss out on this magical tasting experience that combines romance, history, and unforgettable flavors in a unique atmosphere.</p>
+                                        <h3 style={{ color: "white", textDecoration: "underline", marginBottom: "1.5vw" }} className="h3-home roboto">About</h3>
+                                        <p style={{ marginBottom: "1.5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Sailing the Tejo river, tasting delicious wines and food with a wonderful view, while enjoying culture and conviviality! Join us for a hop-on-hop-off boat special cruise from Belém to Praça do Comércio, savor a welcome drink as you cruise along the Tejo river for 45 minutes!</p>
+                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Get ready to disembark at the most beautiful square in Lisbon and immerse yourself in one of the city's most historical cafés and restaurants, "Martinho da Arcada", to relish exquisite authentic Portuguese food and wines! Taking a nice walk in the heart of the city, we will visit one of the first bars to sell ginjinha in Lisbon, opened in 1840 by a Galician monk, to experience the best ginjinha in town!</p>
                                     </Col>
                                 </Row>
                                 <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>

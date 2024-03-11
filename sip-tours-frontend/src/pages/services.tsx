@@ -30,7 +30,7 @@ export default function Services() {
                                     </g>
                                 </svg>
                             </div>
-                            <p className="p-home-mobile" style={{ fontSize: "1.95vh", marginTop: "8vh", marginBottom: "8vh" }}>At Sip Tours, we strive to provide much more than just wine tours. We offer a range of tasting experiences and tailor-made adventures that are designed to suit your specific interests and preferences. Whether you're interested in exploring the historic streets of Lisbon, discovering hidden wine bars, or indulging in a private group tasting, we're here to create a unique and unforgettable experience just for you. Our team is passionate about providing exceptional service and ensuring that every detail is taken care of — from start to finish. So, if you're looking for a personalized wine experience in Lisbon, look no further than us. We're here to make your wine dreams come true!</p>
+                            <p className="p-home-mobile" style={{ fontSize: "1.95vh", marginTop: "8vh", marginBottom: "8vh" }}>At Sip Tours, we aim to provide more than just food and wine tours. We offer a range of tasting experiences and tailor-made adventures designed to suit your specific interests and preferences. Whether you're keen on exploring Lisbon's historic streets, discovering hidden small cities around Portugal, or indulging in a private group tasting, we're here to craft a unique and unforgettable experience just for you. Our team is passionate about delivering exceptional service and ensuring that every detail is meticulously taken care of, from start to finish. So, if you're seeking a personalized experience in Portugal, look no further than us. We're here to turn your food and wine dreams into reality!</p>
                         </Row>
                         <Row>
                             <Image
@@ -41,12 +41,6 @@ export default function Services() {
                             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
                                 <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Private Wein Tasting</p>
                             </Row>
-                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
-                                <Button
-                                    className="button-rounded-black-mobile clickable">
-                                    Book Now
-                                </Button>
-                            </Row>
                         </Row>
                         <Row>
                             <Image
@@ -54,52 +48,15 @@ export default function Services() {
                                 alt="Sip Tours About Page"
                                 style={{ width: "95vw", marginInline: "auto", height: "auto" }}
                             />
-                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
+                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
                                 <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Tailor Made Experience</p>
-                            </Row>
-                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
-                                <Button
-                                    className="button-rounded-black-mobile clickable">
-                                    Book Now
-                                </Button>
-                            </Row>
-                        </Row>
-                        <Row>
-                            <Image
-                                src="/ServicesMobile1.webp"
-                                alt="Sip Tours About Page"
-                                style={{ width: "95vw", marginInline: "auto", height: "auto" }}
-                            />
-                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
-                                <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Glimpse Of Sip</p>
-                            </Row>
-                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
-                                <Button
-                                    className="button-rounded-black-mobile clickable">
-                                    Book Now
-                                </Button>
-                            </Row>
-                        </Row>
-                        <Row>
-                            <Image
-                                src="/ServicesMobile1.webp"
-                                alt="Sip Tours About Page"
-                                style={{ width: "95vw", marginInline: "auto", height: "auto" }}
-                            />
-                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
-                                <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Bacchus Lisboa</p>
-                            </Row>
-                            <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
-                                <Button
-                                    className="button-rounded-black-mobile clickable">
-                                    Book Now
-                                </Button>
                             </Row>
                         </Row>
                         <Row>
                             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "column", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
                                 <h1 className="h3-home-mobile" style={{ marginBottom: "3vh" }}>WANT TO KNOW MORE?</h1>
                                 <Button
+                                    onClick={() => navigate("https://api.whatsapp.com/send?phone=351912247175&text=%28Enrico+Sip+Tours%29+Hello%21+I+would+like+to+schedule+a+tour")}
                                     className="button-rounded-black-mobile clickable">
                                     Talk With Us
                                 </Button>
@@ -134,50 +91,38 @@ export default function Services() {
                             <Row style={{ width: "92vw", marginInline: "auto", display: "flex", flexDirection: "row", marginTop: "2vw" }}>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}></Col>
                                 <Col style={{ width: "70%", display: "flex", flexDirection: "column" }}>
-                                    <p className="p-home">At Sip Tours, we strive to provide much more than just wine tours. We offer a range of tasting experiences and tailor-made adventures that are designed to suit your specific interests and preferences. Whether you're interested in exploring the historic streets of Lisbon, discovering hidden wine bars, or indulging in a private group tasting, we're here to create a unique and unforgettable experience just for you. Our team is passionate about providing exceptional service and ensuring that every detail is taken care of — from start to finish. So, if you're looking for a personalized wine experience in Lisbon, look no further than us. We're here to make your wine dreams come true!</p>
+                                    <p className="p-home">At Sip Tours, we aim to provide more than just food and wine tours. We offer a range of tasting experiences and tailor-made adventures designed to suit your specific interests and preferences. Whether you're keen on exploring Lisbon's historic streets, discovering hidden small cities around Portugal, or indulging in a private group tasting, we're here to craft a unique and unforgettable experience just for you. Our team is passionate about delivering exceptional service and ensuring that every detail is meticulously taken care of, from start to finish. So, if you're seeking a personalized experience in Portugal, look no further than us. We're here to turn your food and wine dreams into reality!</p>
                                 </Col>
                             </Row>
                             <Row style={{ marginTop: "4vw", marginBottom: "5vw", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", gap: "2vw" }}>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
                                     <Image
+                                        onClick={() => navigate("/tours/winetasting")}
+                                        className="clickable"
                                         src="/Home3.webp"
                                         alt="Sip Tours Home Page"
                                         style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
                                     />
-                                    <p>
+                                    <p
+                                        className="clickable"
+                                        onClick={() => navigate("/tours/winetasting")}
+                                    >
                                         Private Wine Tasting
                                     </p>
                                 </Col>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
                                     <Image
+                                        onClick={() => navigate("/tours/customizabletours")}
+                                        className="clickable"
                                         src="/Home3.webp"
                                         alt="Sip Tours Home Page"
                                         style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
                                     />
-                                    <p>
+                                    <p
+                                        className="clickable"
+                                        onClick={() => navigate("/tours/customizabletours")}
+                                    >
                                         Tailor Made Experience
-                                    </p>
-                                </Col>
-                            </Row>
-                            <Row style={{ marginTop: "4vw", marginBottom: "5vw", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", gap: "2vw" }}>
-                                <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
-                                    <Image
-                                        src="/Home3.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
-                                    />
-                                    <p>
-                                        Glimpse of Sip
-                                    </p>
-                                </Col>
-                                <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
-                                    <Image
-                                        src="/Home3.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
-                                    />
-                                    <p>
-                                        Bacchus Lisboa
                                     </p>
                                 </Col>
                             </Row>
@@ -185,6 +130,7 @@ export default function Services() {
                                 <div style={{ marginLeft: "auto", marginRight: "auto" }}>
                                     <Button
                                         style={{ marginLeft: "8.5vw" }}
+                                        onClick={() => navigate("https://api.whatsapp.com/send?phone=351912247175&text=%28Enrico+Sip+Tours%29+Hello%21+I+would+like+to+schedule+a+tour")}
                                         className="button-rounded-black clickable">
                                         Talk With Us
                                     </Button>
