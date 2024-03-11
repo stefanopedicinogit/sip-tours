@@ -30,12 +30,13 @@ export default function FormContact() {
             setEmailFieldRequired(false);
             setNameFieldRequired(false);
         }
+        // Handle form submission logic here
         emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID ?? "service_gn19734", process.env.REACT_APP_EMAILJS_TEMPLATE_ID_FORM ?? "template_tdczgjf", form.current, process.env.REACT_APP_EMAILJS_SECRET_KEY ?? "FGINqgCQYdQdhPMaX")
-        .then((result) => {
-          console.log(result.text);
-        }, (error) => {
-          console.log(error.text);
-        });
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
         setName('');
         setEmail('');
