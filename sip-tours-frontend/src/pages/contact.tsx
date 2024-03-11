@@ -5,11 +5,9 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
-import useNavigate from "@/hooks/useNavigate";
 import { Button, Col, Image, Row } from "react-bootstrap";
 
 export default function Contact() {
-    const navigate = useNavigate();
     const isMobile = useIsMobile();
 
     return (
@@ -38,10 +36,10 @@ export default function Contact() {
                                 </svg>
                             </div>
                             <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "8vh" }}>
-                                At Sip we believe that building relationships with our clients is key to providing exceptional service. We love meeting new people and are always here to answer your questions, whether you're looking for more information about our tours or simply want some advice on where to eat and drink in Lisbon.
+                                {"At Sip we believe that building relationships with our clients is key to providing exceptional service. We love meeting new people and are always here to answer your questions, whether you're looking for more information about our tours or simply want some advice on where to eat and drink in Lisbon."}
                             </p>
                             <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "8vh" }}>
-                                We pride ourselves on our personalized approach, and we're here to help with almost anything you need. So don't hesitate to get in touch — we're excited to connect with you and share our love for Portugal's wine and food culture!</p>
+                                {"We pride ourselves on our personalized approach, and we're here to help with almost anything you need. So don't hesitate to get in touch — we're excited to connect with you and share our love for Portugal's wine and food culture!"}</p>
                             <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "8vh" }}>
                                 Fill the form and we will get back to you as soon as possible. Or you can click on the WhatsApp button below to call us or send a message whenever you want!
                             </p>

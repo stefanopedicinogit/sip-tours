@@ -3,13 +3,11 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
-import useNavigate from "@/hooks/useNavigate";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { Fade } from 'react-awesome-reveal';
 
 export default function WineTasting() {
-    const navigate = useNavigate();
     const isMobile = useIsMobile();
 
     useEffect(() => {
@@ -87,9 +85,9 @@ export default function WineTasting() {
                                     </Col>
                                     <Col style={{ display: "flex", flexDirection: "column", width: "100%" }}>
                                         <h3 style={{ color: "white", textDecoration: "underline", marginBottom: "2vw" }} className="h3-home roboto">About</h3>
-                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Are you searching for a unique and memorable food and wine tasting experience for your group or special occasion? Look no further than us!! Our tours and tastings will take you on a journey through Portugal's most famous wine regions — from the historic vineyards of the Douro Valley to the stunning coastal vineyards of Alentejo</p>
-                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Whether you're celebrating a special occasion, hosting a corporate event, or just looking for a fun day out with friends, our team can create a bespoke experience that caters to your specific interests and preferences. With our expert guides and personalized service, we're committed to making your wine tasting journey through Portugal an unforgettable one. So why not join us for a journey through Portugal's diverse wine regions and indulge in the best food and wines that this beautiful country has to offer?</p>
-                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Contact us today to learn more about our wine tours and tastings and book your bespoke experience.</p>
+                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Are you searching for a unique and memorable food and wine tasting experience for your group or special occasion? Look no further than us!! Our tours and tastings will take you on a journey through Portugal's most famous wine regions — from the historic vineyards of the Douro Valley to the stunning coastal vineyards of Alentejo"}</p>
+                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Whether you're celebrating a special occasion, hosting a corporate event, or just looking for a fun day out with friends, our team can create a bespoke experience that caters to your specific interests and preferences. With our expert guides and personalized service, we're committed to making your wine tasting journey through Portugal an unforgettable one. So why not join us for a journey through Portugal's diverse wine regions and indulge in the best food and wines that this beautiful country has to offer?"}</p>
+                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Contact us today to learn more about our wine tours and tastings and book your bespoke experience."}</p>
                                     </Col>
                                 </Row>
                                 <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>

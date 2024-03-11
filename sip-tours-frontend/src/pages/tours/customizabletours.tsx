@@ -3,13 +3,11 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
-import useNavigate from "@/hooks/useNavigate";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { Fade } from 'react-awesome-reveal';
 
 export default function TailorMadeExperience() {
-    const navigate = useNavigate();
     const isMobile = useIsMobile();
 
     useEffect(() => {
@@ -87,9 +85,9 @@ export default function TailorMadeExperience() {
                                     </Col>
                                     <Col style={{ display: "flex", flexDirection: "column", width: "100%" }}>
                                         <h3 style={{ color: "white", textDecoration: "underline", marginBottom: "2vw" }} className="h3-home roboto">About</h3>
-                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">At Sip, we're not just about wine tours — we're more than happy to accommodate any request to make your wine and food experience in Portugal truly unforgettable. From private group tastings to tailored food and wine adventures, we're passionate about creating unique itineraries that cater to your specific interests and preferences.</p>
-                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Our team is committed to providing exceptional service and ensuring that every detail is taken care of, from start to finish, so you can relax and enjoy your experience. Whether you want to explore the historic streets of Lisbon, discover hidden wine bars, or indulge in a food and wine tasting, we're here to make your wine dreams come true.</p>
-                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">So, if you're looking for a personalized wine and food experience in Portugal, look no further than Sip. Contact us today to learn more about our tailor-made adventures and let us create a truly unforgettable experience for you!</p>
+                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"At Sip, we're not just about wine tours — we're more than happy to accommodate any request to make your wine and food experience in Portugal truly unforgettable. From private group tastings to tailored food and wine adventures, we're passionate about creating unique itineraries that cater to your specific interests and preferences."}</p>
+                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Our team is committed to providing exceptional service and ensuring that every detail is taken care of, from start to finish, so you can relax and enjoy your experience. Whether you want to explore the historic streets of Lisbon, discover hidden wine bars, or indulge in a food and wine tasting, we're here to make your wine dreams come true."}</p>
+                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"So, if you're looking for a personalized wine and food experience in Portugal, look no further than Sip. Contact us today to learn more about our tailor-made adventures and let us create a truly unforgettable experience for you!"}</p>
                                     </Col>
                                 </Row>
                                 <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>

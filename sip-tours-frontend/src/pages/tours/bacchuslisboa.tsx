@@ -3,13 +3,11 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
-import useNavigate from "@/hooks/useNavigate";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { Fade } from 'react-awesome-reveal';
 
 export default function GlipseOfSip() {
-    const navigate = useNavigate();
     const isMobile = useIsMobile();
 
     useEffect(() => {
@@ -86,7 +84,7 @@ export default function GlipseOfSip() {
                                     </Col>
                                     <Col style={{ display: "flex", flexDirection: "column", width: "100%" }}>
                                         <h3 style={{ color: "white", textDecoration: "underline", marginBottom: "2vw" }} className="h3-home roboto">About</h3>
-                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Our Wine & Food Tour in Lisbon's oldest neighborhood is an opportunity to explore the rich culture and flavors of Portugal. Our knowledgeable guides will introduce you to some of the most historic landmarks and traditional restaurants, where you'll have the chance to experience the local culture and cuisine. Here you'll savor 6 different types of local wine, including red, white, palhete, and fortified varietals, as well as the famous "ginjinha" liqueur, and immerse yourself in the authentic flavors of Portugal. You will also sample some of the typical Portuguese dishes such as Pastel de Bacalhau, artisanal sausages, crispy croquettes, fresh bread, and local olives, all while discovering the fascinating history of the neighborhood. With our expert guides, you're guaranteed an unforgettable gastronomic journey through Lisbon.</p>
+                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Our Wine & Food Tour in Lisbon's oldest neighborhood is an opportunity to explore the rich culture and flavors of Portugal. Our knowledgeable guides will introduce you to some of the most historic landmarks and traditional restaurants, where you'll have the chance to experience the local culture and cuisine. Here you'll savor 6 different types of local wine, including red, white, palhete, and fortified varietals, as well as the famous ''ginjinha'' liqueur, and immerse yourself in the authentic flavors of Portugal. You will also sample some of the typical Portuguese dishes such as Pastel de Bacalhau, artisanal sausages, crispy croquettes, fresh bread, and local olives, all while discovering the fascinating history of the neighborhood. With our expert guides, you're guaranteed an unforgettable gastronomic journey through Lisbon."}</p>
                                     </Col>
                                 </Row>
                                 <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>

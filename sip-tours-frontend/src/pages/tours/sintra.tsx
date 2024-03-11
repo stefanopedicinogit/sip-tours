@@ -3,13 +3,11 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
-import useNavigate from "@/hooks/useNavigate";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { Fade } from 'react-awesome-reveal';
 
 export default function Sintra() {
-    const navigate = useNavigate();
     const isMobile = useIsMobile();
 
     useEffect(() => {
@@ -86,8 +84,8 @@ export default function Sintra() {
                                     </Col>
                                     <Col style={{ display: "flex", flexDirection: "column", width: "100%" }}>
                                         <h3 style={{ color: "white", textDecoration: "underline", marginBottom: "1.5vw" }} className="h3-home roboto">About</h3>
-                                        <p style={{ marginBottom: "1.5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Nestled amidst lush green hills and dotted with fairytale-like palaces and castles, Sintra is a destination that captivates the imagination. This UNESCO World Heritage Site in Portugal is a treasure trove of history, culture, and natural beauty. As you wander through its narrow cobblestone streets, you'll be transported to a bygone era, where legends come to life and every corner reveals a new enchantment. Explore the majestic Pena Palace, with its vibrant colors and stunning panoramic views, or wander through the mystical Quinta da Regaleira, an estate filled with secret passages and hidden symbols. From the charming town center to the breathtaking landscapes of the Sintra-Cascais Natural Park, Sintra offers a unique and unforgettable experience. Let Sip Tours be your guide as we uncover the secrets of Sintra and create memories that will last a lifetime.</p>
-                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Experience the magic of Sintra with Sip Tours! Our half-day journey combines captivating sights with delightful flavors. Optional stops include a visit to a local winery or a cheese farm, and we'll also make a special stop at a local bar for a wine tasting experience. Immerse yourself in the rich history and culture of Sintra as we partner with local businesses for an authentic and immersive experience. Join us on this extraordinary journey and create unforgettable memories with Sip Tours.</p>
+                                        <p style={{ marginBottom: "1.5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Nestled amidst lush green hills and dotted with fairytale-like palaces and castles, Sintra is a destination that captivates the imagination. This UNESCO World Heritage Site in Portugal is a treasure trove of history, culture, and natural beauty. As you wander through its narrow cobblestone streets, you'll be transported to a bygone era, where legends come to life and every corner reveals a new enchantment. Explore the majestic Pena Palace, with its vibrant colors and stunning panoramic views, or wander through the mystical Quinta da Regaleira, an estate filled with secret passages and hidden symbols. From the charming town center to the breathtaking landscapes of the Sintra-Cascais Natural Park, Sintra offers a unique and unforgettable experience. Let Sip Tours be your guide as we uncover the secrets of Sintra and create memories that will last a lifetime."}</p>
+                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Experience the magic of Sintra with Sip Tours! Our half-day journey combines captivating sights with delightful flavors. Optional stops include a visit to a local winery or a cheese farm, and we'll also make a special stop at a local bar for a wine tasting experience. Immerse yourself in the rich history and culture of Sintra as we partner with local businesses for an authentic and immersive experience. Join us on this extraordinary journey and create unforgettable memories with Sip Tours."}</p>
                                     </Col>
                                 </Row>
                                 <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>

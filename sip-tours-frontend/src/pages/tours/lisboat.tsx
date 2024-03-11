@@ -3,13 +3,11 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
-import useNavigate from "@/hooks/useNavigate";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { Fade } from 'react-awesome-reveal';
 
 export default function Lisboat() {
-    const navigate = useNavigate();
     const isMobile = useIsMobile();
 
     useEffect(() => {
@@ -87,7 +85,7 @@ export default function Lisboat() {
                                     <Col style={{ display: "flex", flexDirection: "column", width: "100%" }}>
                                         <h3 style={{ color: "white", textDecoration: "underline", marginBottom: "1.5vw" }} className="h3-home roboto">About</h3>
                                         <p style={{ marginBottom: "1.5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Sailing the Tejo river, tasting delicious wines and food with a wonderful view, while enjoying culture and conviviality! Join us for a hop-on-hop-off boat special cruise from Belém to Praça do Comércio, savor a welcome drink as you cruise along the Tejo river for 45 minutes!</p>
-                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Get ready to disembark at the most beautiful square in Lisbon and immerse yourself in one of the city's most historical cafés and restaurants, "Martinho da Arcada", to relish exquisite authentic Portuguese food and wines! Taking a nice walk in the heart of the city, we will visit one of the first bars to sell ginjinha in Lisbon, opened in 1840 by a Galician monk, to experience the best ginjinha in town!</p>
+                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Get ready to disembark at the most beautiful square in Lisbon and immerse yourself in one of the city's most historical cafés and restaurants, 'Martinho da Arcada', to relish exquisite authentic Portuguese food and wines! Taking a nice walk in the heart of the city, we will visit one of the first bars to sell ginjinha in Lisbon, opened in 1840 by a Galician monk, to experience the best ginjinha in town!"}</p>
                                     </Col>
                                 </Row>
                                 <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>

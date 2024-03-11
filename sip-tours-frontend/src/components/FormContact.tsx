@@ -92,7 +92,7 @@ export default function FormContact() {
                 <br />
 
                 <label>
-                    <p>Message (let us know when you're coming to Portugal)</p>
+                    <p>{"Message (let us know when you're coming to Portugal)"}</p>
                     <textarea
                         className="form-contact"
                         value={message}

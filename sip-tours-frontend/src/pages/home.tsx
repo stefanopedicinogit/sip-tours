@@ -37,7 +37,7 @@ export default function Home() {
             </Row>
             <Row style={{ width: "92vw", marginInline: "auto", marginBottom: "3vh" }}>
               <h1 className="h1-home-mobile">WHAT IS SIP?</h1>
-              <h3 className="p-home-mobile" style={{ marginTop: "2vh" }}>Sip was born with the intention of sharing our knowledge and passion for Portugal's food and wine heritage with others. Our team of dedicated professionals is committed to providing a welcoming and engaging environment for wine and food enthusiasts of all levels. With a focus on education, conviviality, entertainment, and professional expertise, we are proud to offer the very best experience to discover and explore the wonderful world of Portugal.</h3>
+              <h3 className="p-home-mobile" style={{ marginTop: "2vh" }}>{"Sip was born with the intention of sharing our knowledge and passion for Portugal's food and wine heritage with others. Our team of dedicated professionals is committed to providing a welcoming and engaging environment for wine and food enthusiasts of all levels. With a focus on education, conviviality, entertainment, and professional expertise, we are proud to offer the very best experience to discover and explore the wonderful world of Portugal."}</h3>
             </Row>
             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "18vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
               <Button
@@ -47,7 +47,7 @@ export default function Home() {
             </Row>
             <Row style={{ width: "92vw", marginInline: "auto", marginBottom: "3vh" }}>
               <h3 className="h3-home-mobile" style={{ textDecoration: "underline" }}>Our Wine and Food Exclusive Tours & Experiences</h3>
-              <h3 className="p-home-mobile" style={{ marginTop: "2vh" }}>Discover the authentic flavors of Portugal on our Food & Wine Tours in Lisbon's oldest neighborhood. Indulge in a variety of local wines, including red, white, palhete, and fortified varietals, along with the famous "ginjinha" liqueur. We'll also take you to some of the most historic landmarks and traditional restaurants, where you'll have the chance to experience the local culture and cuisine firsthand. With our expert guides, you are guaranteed an unforgettable gastronomic journey!</h3>
+              <h3 className="p-home-mobile" style={{ marginTop: "2vh" }}>{"Discover the authentic flavors of Portugal on our Food & Wine Tours in Lisbon's oldest neighborhood. Indulge in a variety of local wines, including red, white, palhete, and fortified varietals, along with the famous ''ginjinha'' liqueur. We'll also take you to some of the most historic landmarks and traditional restaurants, where you'll have the chance to experience the local culture and cuisine firsthand. With our expert guides, you are guaranteed an unforgettable gastronomic journey!"}</h3>
             </Row>
             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "18vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
               <Button
@@ -191,7 +191,7 @@ export default function Home() {
                   </Button>
                 </Col>
                 <Col style={{ width: "52%" }}>
-                  <p className="p-home">Discover the authentic flavors of Portugal on our Food & Wine Tours in Lisbon's oldest neighborhood. Indulge in a variety of local wines, including red, white, palhete, and fortified varietals, along with the famous "ginjinha" liqueur. We'll also take you to some of the most historic landmarks and traditional restaurants, where you'll have the chance to experience the local culture and cuisine firsthand. With our expert guides, you are guaranteed an unforgettable gastronomic journey!</p>
+                  <p className="p-home">{"Discover the authentic flavors of Portugal on our Food & Wine Tours in Lisbon's oldest neighborhood. Indulge in a variety of local wines, including red, white, palhete, and fortified varietals, along with the famous ''ginjinha'' liqueur. We'll also take you to some of the most historic landmarks and traditional restaurants, where you'll have the chance to experience the local culture and cuisine firsthand. With our expert guides, you are guaranteed an unforgettable gastronomic journey!"}</p>
                 </Col>
               </Row>
               <Row style={{ display: "flex", flexDirection: "row", marginTop: "4vw", marginBottom: "10vw" }}>

@@ -3,13 +3,11 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
-import useNavigate from "@/hooks/useNavigate";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { Fade } from 'react-awesome-reveal';
 
 export default function GlipseOfSip() {
-    const navigate = useNavigate();
     const isMobile = useIsMobile();
 
     useEffect(() => {
@@ -86,8 +84,8 @@ export default function GlipseOfSip() {
                                     </Col>
                                     <Col style={{ display: "flex", flexDirection: "column", width: "100%" }}>
                                         <h3 style={{ color: "white", textDecoration: "underline", marginBottom: "2vw" }} className="h3-home roboto">About</h3>
-                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">Are you ready to indulge in a truly unforgettable experience in Lisbon? Look no further than our Glimpse of Sip Tour! From the romantic and bohemian neighborhoods of Príncipe Real to the stunning Avenida de Liberdade, we'll take you on a journey through Portugal's most unique wine bars and exquisite eateries. With a focus on insight and history, you'll have the opportunity to taste a variety of wines, including Vinho Verde, white from the Açores Islands, and red from Bairrada, all perfectly paired with traditional Portuguese petiscos (tapas). </p>
-                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">The culinary journey doesn't stop there. We will visit the luxurious Palácio da Anunciada, a stunning 5-star hotel built in 1533, where you'll be transported to an exclusive area of the city where you can savor typical Portuguese food such as octopus and squid croquettes, local cheeses, and artisanal sausages, all topped off with famous aged Portuguese Tawny Port. Don't miss out on this magical tasting experience that combines romance, history, and unforgettable flavors in a unique atmosphere.</p>
+                                        <p style={{ marginBottom: "2vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Are you ready to indulge in a truly unforgettable experience in Lisbon? Look no further than our Glimpse of Sip Tour! From the romantic and bohemian neighborhoods of Príncipe Real to the stunning Avenida de Liberdade, we'll take you on a journey through Portugal's most unique wine bars and exquisite eateries. With a focus on insight and history, you'll have the opportunity to taste a variety of wines, including Vinho Verde, white from the Açores Islands, and red from Bairrada, all perfectly paired with traditional Portuguese petiscos (tapas)."}</p>
+                                        <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"The culinary journey doesn't stop there. We will visit the luxurious Palácio da Anunciada, a stunning 5-star hotel built in 1533, where you'll be transported to an exclusive area of the city where you can savor typical Portuguese food such as octopus and squid croquettes, local cheeses, and artisanal sausages, all topped off with famous aged Portuguese Tawny Port. Don't miss out on this magical tasting experience that combines romance, history, and unforgettable flavors in a unique atmosphere."}</p>
                                     </Col>
                                 </Row>
                                 <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
