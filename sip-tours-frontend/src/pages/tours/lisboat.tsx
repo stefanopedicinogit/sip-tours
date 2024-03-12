@@ -26,7 +26,7 @@ export default function Lisboat() {
                         <Layout fullWidth fullHeight>
                             <div className="gray-opacity">
                                 <Col style={{ width: "40vw" }}>
-                                    <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "5vw", position: "relative", lineHeight: "3.75vw" }}>LISBOAT & SIP</h1>
+                                    <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "5vw", position: "absolute", lineHeight: "3.75vw" }}>LISBOAT & SIP</h1>
                                 </Col>
                                 <Fade triggerOnce duration={9000}>
                                     <Image
@@ -88,7 +88,7 @@ export default function Lisboat() {
                                         <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Get ready to disembark at the most beautiful square in Lisbon and immerse yourself in one of the city's most historical cafés and restaurants, 'Martinho da Arcada', to relish exquisite authentic Portuguese food and wines! Taking a nice walk in the heart of the city, we will visit one of the first bars to sell ginjinha in Lisbon, opened in 1840 by a Galician monk, to experience the best ginjinha in town!"}</p>
                                     </Col>
                                 </Row>
-                                <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
+                                <Row style={{ paddingLeft:"3vw", paddingRight:"3vw", overflowX: "auto", display: "flex", width:"340%", flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                     <Image
                                         src="/Home1.webp"
                                         alt="Sip Tours Home Page"

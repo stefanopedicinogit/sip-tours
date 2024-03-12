@@ -26,7 +26,7 @@ export default function Sintra() {
                         <Layout fullWidth fullHeight>
                             <div className="gray-opacity">
                                 <Col style={{ width: "40vw" }}>
-                                    <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "5vw", position: "relative", lineHeight: "3.75vw" }}>SINTRA</h1>
+                                    <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "5vw", position: "absolute", lineHeight: "3.75vw" }}>SINTRA</h1>
                                 </Col>
                                 <Fade triggerOnce duration={9000}>
                                     <Image
@@ -88,7 +88,7 @@ export default function Sintra() {
                                         <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Experience the magic of Sintra with Sip Tours! Our half-day journey combines captivating sights with delightful flavors. Optional stops include a visit to a local winery or a cheese farm, and we'll also make a special stop at a local bar for a wine tasting experience. Immerse yourself in the rich history and culture of Sintra as we partner with local businesses for an authentic and immersive experience. Join us on this extraordinary journey and create unforgettable memories with Sip Tours."}</p>
                                     </Col>
                                 </Row>
-                                <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
+                                <Row style={{ paddingLeft:"3vw", paddingRight:"3vw", overflowX: "auto", display: "flex", width:"340%", flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                     <Image
                                         src="/Home1.webp"
                                         alt="Sip Tours Home Page"

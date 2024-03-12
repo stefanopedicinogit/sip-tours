@@ -199,7 +199,7 @@ export default function Header() {
               <MenuDrawerWrapper>
                 <HeaderWrapper>
                   <MenuLogo
-                    src='./SIPLogoNero.svg'
+                    src='/SIPLogoNero.svg'
                     alt="Logo BeTalent."
                     onClick={() => {
                       navigate("/home");
@@ -207,7 +207,7 @@ export default function Header() {
                   />
                   <MenuClose
                     style={{ fill: 'black', color: 'black' }}
-                    src='./close.svg'
+                    src='/close.svg'
                     alt="Icona chiudi menù."
                     onClick={() => {
                       setDrawerOpen(false);
@@ -243,7 +243,7 @@ export default function Header() {
                   onClick={() => navigate("/home")}
                 />
                 <MenuOpen
-                  src='./menu.svg'
+                  src='/menu.svg'
                   alt="Icona apri menù."
                   width={32}
                   height={32}

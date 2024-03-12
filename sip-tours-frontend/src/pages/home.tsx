@@ -86,6 +86,11 @@ export default function Home() {
             </Row>
             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginTop: "3vh", marginBottom: "8vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
               <Button
+                onClick={() => navigate("/tour/glimpseofsip")}
+                className="button-rounded-black-mobile clickable">
+                View More
+              </Button>
+              <Button
                 onClick={() => navigate("https://api.whatsapp.com/send?phone=351912247175&text=%28Enrico+Sip+Tours%29+Hello%21+I+would+like+to+schedule+a+tour")}
                 className="button-rounded-black-mobile clickable">
                 Book Now

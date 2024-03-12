@@ -26,7 +26,7 @@ export default function GlipseOfSip() {
                         <Layout fullWidth fullHeight>
                             <div className="gray-opacity">
                                 <Col style={{ width: "50vw" }}>
-                                    <h1 className="h1-home transition-image roboto" style={{color: 'whitesmoke', zIndex: 10, top: "14vw", marginLeft: "5vw", position: "relative", lineHeight: "3.75vw" }}>A GLIMPSE OF SIP</h1>
+                                    <h1 className="h1-home transition-image roboto" style={{color: 'whitesmoke', zIndex: 10, top: "14vw", marginLeft: "5vw", position: "absolute", lineHeight: "3.75vw" }}>A GLIMPSE OF SIP</h1>
                                 </Col>
                                 <Fade triggerOnce duration={9000}>
                                     <Image
@@ -88,7 +88,7 @@ export default function GlipseOfSip() {
                                         <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"The culinary journey doesn't stop there. We will visit the luxurious Palácio da Anunciada, a stunning 5-star hotel built in 1533, where you'll be transported to an exclusive area of the city where you can savor typical Portuguese food such as octopus and squid croquettes, local cheeses, and artisanal sausages, all topped off with famous aged Portuguese Tawny Port. Don't miss out on this magical tasting experience that combines romance, history, and unforgettable flavors in a unique atmosphere."}</p>
                                     </Col>
                                 </Row>
-                                <Row style={{ overflowX: "auto", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
+                                <Row style={{ paddingLeft:"3vw", paddingRight:"3vw", overflowX: "auto", display: "flex", width:"340%", flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                     <Image
                                         src="/Home1.webp"
                                         alt="Sip Tours Home Page"
