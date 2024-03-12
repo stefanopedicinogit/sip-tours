@@ -241,7 +241,7 @@ export default function HeaderHome() {
                     <button onClick={() => navigate("/contact")}>Contact</button>
                   </MenuDrawerNavigationItem>
                   <MenuDrawerNavigationItem>
-                    <button onClick={() => navigate("/login")}>Brochure</button>
+                    <button onClick={() => navigate("/brochure")}>Brochure</button>
                   </MenuDrawerNavigationItem>
                 </MenuDrawerNavigation>
               </MenuDrawerWrapper>

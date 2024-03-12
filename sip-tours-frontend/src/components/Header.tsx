@@ -222,13 +222,13 @@ export default function Header() {
                     <button onClick={() => navigate("/about")}>About Us</button>
                   </MenuDrawerNavigationItem>
                   <MenuDrawerNavigationItem>
-                    <button onClick={() => navigate("/contact")}>Contact</button>
-                  </MenuDrawerNavigationItem>
-                  <MenuDrawerNavigationItem>
                     <button onClick={() => navigate("/services")}>Services</button>
                   </MenuDrawerNavigationItem>
                   <MenuDrawerNavigationItem>
-                    <button onClick={() => navigate("/login")}>Brochure</button>
+                    <button onClick={() => navigate("/contact")}>Contact</button>
+                  </MenuDrawerNavigationItem>
+                  <MenuDrawerNavigationItem>
+                    <button onClick={() => navigate("/brochure")}>Brochure</button>
                   </MenuDrawerNavigationItem>
                 </MenuDrawerNavigation>
               </MenuDrawerWrapper>

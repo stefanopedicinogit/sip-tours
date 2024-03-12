@@ -84,7 +84,9 @@ export default function About() {
                         </Row>
                         <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
                             <Button
-                                className="button-rounded-black-mobile clickable">
+                                className="button-rounded-black-mobile clickable"
+                                onClick={() => navigate("https://api.whatsapp.com/send?phone=351912247175&text=%28Enrico+Sip+Tours%29+Hello%21+I+would+like+to+schedule+a+tour")}
+                                >
                                 Talk With Us
                             </Button>
                         </Row>
