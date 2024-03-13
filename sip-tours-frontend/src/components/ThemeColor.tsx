@@ -18,7 +18,9 @@ enum ThemeColor {
   greenishblue = "#5F9EA0",
   verde= "#77DD77",
   verdognolo = "#87b93e",
-  violet = "#A185A4"
+  violet = "#A185A4",
+  verdemuschio ="#11944e",
+  foodwine= "#c08821"
 }
 
 export default ThemeColor;

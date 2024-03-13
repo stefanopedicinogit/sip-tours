@@ -3,20 +3,60 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
-import { useEffect } from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import { Col, Image, Row, Spinner } from "react-bootstrap";
 import { Fade } from 'react-awesome-reveal';
 
 export default function Lisboat() {
     const isMobile = useIsMobile();
 
-    useEffect(() => {
+    const [galleryWidth, setGalleryWidth] = useState<number>(230);
+    const [galleryWidth2, setGalleryWidth2] = useState<number>(530);
+    const [sumWidth, setSumWidth] = useState<number>(760);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [imagePaths, setImagePaths] = useState<string[]>([]);
+    const [imagePaths2, setImagePaths2] = useState<string[]>([]);
+
+    const onLoad = async () => {
+        setLoading(true);
         setTimeout(() => {
             document.querySelector('.transition-image')!.classList.add('active');
         }, 500)
         setTimeout(() => {
         }, 10000)
-    }, [])
+        const imagePaths = Array.from({ length: 6 }, (_, i) => `/LisboatGallery/${i}.jpg`);
+        const imagePaths2 = Array.from({ length: 8 }, (_, i) => `/LisboatGalleryH/${i}.jpg`);
+        console.log(imagePaths)
+        setGalleryWidth((imagePaths.length * 30) + 50);
+        setGalleryWidth2((imagePaths2.length * 60) + 50);
+        const wiii = (galleryWidth + galleryWidth2);
+        console.log('wwiiiii', wiii)
+        setSumWidth(wiii);
+        setImagePaths(imagePaths);
+        setImagePaths2(imagePaths2);
+    }
+
+    useEffect(() => {
+        onLoad()
+    }, []);
+       
+
+    useEffect(() => {
+        if (sumWidth > 0){
+        console.log(sumWidth)
+        setLoading(false);
+        }
+    }, [sumWidth]);
+
+
+    if (loading === true) {
+        return (
+            <>
+                <Spinner animation="border" role="status" />
+                <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBOA</h1>
+            </>
+        );
+    }
 
     return (
         <>
@@ -30,8 +70,9 @@ export default function Lisboat() {
                                 </Col>
                                 <Fade triggerOnce duration={9000}>
                                     <Image
-                                        src="/GlimpseOfSip7.webp"
-                                        alt="Your Image"
+                                        src="/Lisboat1.jpg"
+                                        title="SIP & Lisboat"
+                                        alt="SIP & Lisboat"
                                         style={{
                                             position: "absolute",
                                             top: 0,
@@ -44,7 +85,7 @@ export default function Lisboat() {
                                 </Fade>
                             </div>
                         </Layout>
-                            <Layout fullWidth backgroundColor={ThemeColor.violet} style={{ paddingBottom: "5vw" }}>
+                            <Layout fullWidth backgroundColor={ThemeColor.greenishblue} style={{ paddingBottom: "5vw" }}>
                                 <Header />
                                 <div style={{ position: "relative", height: "7vw" }}></div>
                                 <Row style={{ width: "92vw", marginInline: "auto", display: "flex", flexDirection: "row", gap: "10vw" }}>
@@ -88,38 +129,20 @@ export default function Lisboat() {
                                         <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Get ready to disembark at the most beautiful square in Lisbon and immerse yourself in one of the city's most historical cafés and restaurants, 'Martinho da Arcada', to relish exquisite authentic Portuguese food and wines! Taking a nice walk in the heart of the city, we will visit one of the first bars to sell ginjinha in Lisbon, opened in 1840 by a Galician monk, to experience the best ginjinha in town!"}</p>
                                     </Col>
                                 </Row>
-                                <Row style={{ paddingLeft:"3vw", paddingRight:"3vw", overflowX: "auto", display: "flex", width:"340%", flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                </Row>
+                                {sumWidth > 0 && (
+                                <div style={{ display: "flex", flexDirection: "row", gap: "4vw", width: `${sumWidth}%` }}>
+                                    <Row style={{ paddingLeft: "3vw", paddingRight: "3vw", overflowX: "auto", display: "flex", width: `${galleryWidth}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
+                                        {imagePaths.map((path, index) => (
+                                            <Image key={index} src={path} alt="Sip tours Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                        ))}
+                                    </Row>
+                                    <Row style={{ paddingLeft: "3vw", paddingRight: "3vw", overflowX: "auto", display: "flex", width: `${galleryWidth2}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
+                                        {imagePaths2.map((path, index) => (
+                                            <Image key={index} src={path} alt="Sip tours Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                        ))}
+                                    </Row>
+                                </div>
+                            )}
                             </Layout>
                         <div style={{ marginTop: "7vw" }}>
                             <PreFooter />

@@ -34,9 +34,9 @@ export default function Services() {
                         </Row>
                         <Row>
                             <Image
-                                src="/ServicesMobile1.webp"
+                                src="/Wine1.jpeg"
                                 alt="Sip Tours About Page"
-                                style={{ width: "95vw", marginInline: "auto", height: "auto" }}
+                                style={{ width: "95vw", marginInline: "auto", height: "70vh" }}
                             />
                             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
                                 <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Private Wein Tasting</p>
@@ -44,9 +44,9 @@ export default function Services() {
                         </Row>
                         <Row>
                             <Image
-                                src="/ServicesMobile1.webp"
+                                src="/Services3.jpg"
                                 alt="Sip Tours About Page"
-                                style={{ width: "95vw", marginInline: "auto", height: "auto" }}
+                                style={{ width: "95vw", marginInline: "auto", height: "70vh" }}
                             />
                             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
                                 <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Tailor Made Experience</p>
@@ -94,14 +94,14 @@ export default function Services() {
                                     <p className="p-home">{"At Sip Tours, we aim to provide more than just food and wine tours. We offer a range of tasting experiences and tailor-made adventures designed to suit your specific interests and preferences. Whether you're keen on exploring Lisbon's historic streets, discovering hidden small cities around Portugal, or indulging in a private group tasting, we're here to craft a unique and unforgettable experience just for you. Our team is passionate about delivering exceptional service and ensuring that every detail is meticulously taken care of, from start to finish. So, if you're seeking a personalized experience in Portugal, look no further than us. We're here to turn your food and wine dreams into reality!"}</p>
                                 </Col>
                             </Row>
-                            <Row style={{ marginTop: "4vw", marginBottom: "5vw", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", gap: "2vw" }}>
+                            <Row style={{ marginTop: "4vw", marginBottom: "5vw", display: "flex", flexDirection: "row", width: "92vw", marginInline: "auto", gap: "5vw" }}>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
                                     <Image
                                         onClick={() => navigate("/tours/winetasting")}
                                         className="clickable"
-                                        src="/Home3.webp"
+                                        src="/Wine1.jpeg"
                                         alt="Sip Tours Home Page"
-                                        style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
+                                        style={{ width: "100%", height: "100vh", marginBottom: "1vw" }}
                                     />
                                     <p
                                         className="clickable"
@@ -114,9 +114,9 @@ export default function Services() {
                                     <Image
                                         onClick={() => navigate("/tours/customizabletours")}
                                         className="clickable"
-                                        src="/Home3.webp"
+                                        src="/Services3.jpg"
                                         alt="Sip Tours Home Page"
-                                        style={{ width: "100%", height: "auto", marginBottom: "1vw" }}
+                                        style={{ width: "100%", height: "100vh", marginBottom: "1vw" }}
                                     />
                                     <p
                                         className="clickable"

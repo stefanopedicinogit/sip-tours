@@ -3,21 +3,60 @@ import Layout from "@/components/Layout";
 import PreFooter from "@/components/PreFooter";
 import ThemeColor from "@/components/ThemeColor";
 import useIsMobile from "@/hooks/useIsMobile";
-import { useEffect } from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import { Col, Image, Row, Spinner } from "react-bootstrap";
 import { Fade } from 'react-awesome-reveal';
 
 export default function GlipseOfSip() {
     const isMobile = useIsMobile();
 
-    useEffect(() => {
+    const [galleryWidth, setGalleryWidth] = useState<number>(290);
+    const [galleryWidth2, setGalleryWidth2] = useState<number>(350);
+    const [sumWidth, setSumWidth] = useState<number>(640);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [imagePaths, setImagePaths] = useState<string[]>([]);
+    const [imagePaths2, setImagePaths2] = useState<string[]>([]);
+
+    const onLoad = async () => {
+        setLoading(true);
         setTimeout(() => {
             document.querySelector('.transition-image')!.classList.add('active');
         }, 500)
         setTimeout(() => {
         }, 10000)
-    }, [])
+        const imagePaths = Array.from({ length: 8 }, (_, i) => `/GlimpseOfSipGallery/${i}.jpg`);
+        const imagePaths2 = Array.from({ length: 5 }, (_, i) => `/GlimpseOfSipGalleryH/${i}.jpg`);
+        console.log(imagePaths)
+        setGalleryWidth((imagePaths.length * 30) + 50);
+        setGalleryWidth2((imagePaths2.length * 60) + 50);
+        const wiii = (galleryWidth + galleryWidth2);
+        console.log('wwiiiii', wiii)
+        setSumWidth(wiii);
+        setImagePaths(imagePaths);
+        setImagePaths2(imagePaths2);
+    }
 
+    useEffect(() => {
+        onLoad()
+    }, []);
+       
+
+    useEffect(() => {
+        if (sumWidth > 0){
+        console.log(sumWidth)
+        setLoading(false);
+        }
+    }, [sumWidth]);
+
+
+    if (loading === true) {
+        return (
+            <>
+                <Spinner animation="border" role="status" />
+                <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBOA</h1>
+            </>
+        );
+    }
     return (
         <>
             {isMobile ? (<></>) :
@@ -88,38 +127,20 @@ export default function GlipseOfSip() {
                                         <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"The culinary journey doesn't stop there. We will visit the luxurious Palácio da Anunciada, a stunning 5-star hotel built in 1533, where you'll be transported to an exclusive area of the city where you can savor typical Portuguese food such as octopus and squid croquettes, local cheeses, and artisanal sausages, all topped off with famous aged Portuguese Tawny Port. Don't miss out on this magical tasting experience that combines romance, history, and unforgettable flavors in a unique atmosphere."}</p>
                                     </Col>
                                 </Row>
-                                <Row style={{ paddingLeft:"3vw", paddingRight:"3vw", overflowX: "auto", display: "flex", width:"340%", flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                    <Image
-                                        src="/Home1.webp"
-                                        alt="Sip Tours Home Page"
-                                        style={{ width: "65vw" }}
-                                    >
-                                    </Image>
-                                </Row>
+                                {sumWidth > 0 && (
+                                <div style={{ display: "flex", flexDirection: "row", gap: "4vw", width: `${sumWidth}%` }}>
+                                    <Row style={{ paddingLeft: "3vw", paddingRight: "1vw", overflowX: "auto", display: "flex", width: `${galleryWidth}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
+                                        {imagePaths.map((path, index) => (
+                                            <Image key={index} src={path} alt="Sip tours Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                        ))}
+                                    </Row>
+                                    <Row style={{ paddingLeft: "3vw", paddingRight: "3vw", overflowX: "auto", display: "flex", width: `${galleryWidth2}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
+                                        {imagePaths2.map((path, index) => (
+                                            <Image key={index} src={path} alt="Sip tours Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                        ))}
+                                    </Row>
+                                </div>
+                            )}
                             </Layout>
                         <div style={{ marginTop: "7vw" }}>
                             <PreFooter />
