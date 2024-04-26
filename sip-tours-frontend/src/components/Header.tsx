@@ -227,9 +227,6 @@ export default function Header() {
                   <MenuDrawerNavigationItem>
                     <button onClick={() => navigate("/contact")}>Contact</button>
                   </MenuDrawerNavigationItem>
-                  <MenuDrawerNavigationItem>
-                    <button onClick={() => navigate("/brochure")}>Brochure</button>
-                  </MenuDrawerNavigationItem>
                 </MenuDrawerNavigation>
               </MenuDrawerWrapper>
             </Layout>

@@ -73,15 +73,6 @@ export default function About() {
                             <p className="p-home-mobile" style={{ marginTop: "5vh", marginBottom: "8vh" }}>Enrico Pignone - Professional Winemaker Founder and Tour Guide</p>
                             <p className="p-home-mobile" style={{ marginBottom: "15vh" }}>Enrico Pignone is a highly skilled and accomplished wine maker, with a strong background in viticulture and oenology. He received a double degree Masters from the University of Turin and the Instituto Superior de Agronomia in Lisbon, and has been working in the wine industry in Italy and Portugal ever since. As the creator of RICO wines, Enrico is known for his expertise in crafting high-quality and distinctive wines that showcase the unique character of the local region. With a deep understanding of the wine-making process and a strong commitment to producing exceptional wines, Enrico is a respected and influential figure in the world of wine.</p>
                         </Row>
-                        <Row style={{ width: "92vw", marginInline: "auto" }}>
-                            <Image
-                                src="/AboutMobile3.webp"
-                                alt="Sip Tours About Page"
-                                style={{ width: "100%", height: "auto" }}
-                            />
-                            <p className="p-home-mobile" style={{ marginTop: "5vh", marginBottom: "8vh" }}>Dana Volansky - Creative Director Founder and Marketing Manager</p>
-                            <p className="p-home-mobile" style={{ marginBottom: "12vh" }}>Dana is a talented graphic designer with a passion for wine. She has spent much of her career in the hospitality industry in Tel Aviv, where she fell in love with the vibrant and dynamic atmosphere of the restaurant and bar scene. In addition to her work in the hospitality industry, Dana has also spent time in the high tech industry as a designer, where she honed her skills and developed a strong understanding of design principles. However, she eventually came to realize that wine and hospitality were her true passions, and she has been pursuing these interests with dedication and enthusiasm ever since.</p>
-                        </Row>
                         <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
                             <Button
                                 className="button-rounded-black-mobile clickable"
@@ -165,22 +156,11 @@ export default function About() {
                                                 style={{ width: "100%", height: "100%" }}
                                             />
                                         </Col>
-                                        <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
-                                            <Image
-                                                src="/Team2.webp"
-                                                alt="Sip Tours About Page"
-                                                style={{ width: "100%", height: "100%" }}
-                                            />
-                                        </Col>
                                     </Row>
                                     <Row style={{ width: "100%", display: "flex", flexDirection: "row", gap: "3vw", marginBottom: "3vw" }}>
                                         <Col style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "2vw" }}>
                                             <p className="p-home">Enrico Pignone - Professional Winemaker Founder and Tour Guide</p>
                                             <p className="p-home">Enrico Pignone is a highly skilled and accomplished wine maker, with a strong background in viticulture and oenology. He received a double degree Masters from the University of Turin and the Instituto Superior de Agronomia in Lisbon, and has been working in the wine industry in Italy and Portugal ever since. As the creator of RICO wines, Enrico is known for his expertise in crafting high-quality and distinctive wines that showcase the unique character of the local region. With a deep understanding of the wine-making process and a strong commitment to producing exceptional wines, Enrico is a respected and influential figure in the world of wine.</p>
-                                        </Col>
-                                        <Col style={{ width: "100%", display: "flex", flexDirection: "column", gap: "2vw" }}>
-                                            <p className="p-home">Dana Volansky - Creative Director Founder and Marketing Manager</p>
-                                            <p className="p-home">Dana is a talented graphic designer with a passion for wine. She has spent much of her career in the hospitality industry in Tel Aviv, where she fell in love with the vibrant and dynamic atmosphere of the restaurant and bar scene. In addition to her work in the hospitality industry, Dana has also spent time in the high tech industry as a designer, where she honed her skills and developed a strong understanding of design principles. However, she eventually came to realize that wine and hospitality were her true passions, and she has been pursuing these interests with dedication and enthusiasm ever since.</p>
                                         </Col>
                                     </Row>
                                 </Col>
