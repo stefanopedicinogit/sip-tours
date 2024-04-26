@@ -18,11 +18,11 @@ export default function About() {
                         <Header />
                         <Image
                             src="/AboutMobile1.webp"
-                            alt="Sip Tours About Page"
+                            alt="Sip Tour About Page"
                             style={{ width: "100%", height: "auto" }}
                         />
                         <Row style={{ marginTop: "5vh", width: "92vw", marginInline: "auto", marginBottom: "8vh" }}>
-                            <h1 className="h1-home-mobile">SIP TOURS</h1>
+                            <h1 className="h1-home-mobile">SIP TOUR</h1>
                             <div style={{ marginTop: "3vh" }}>
                                 <svg preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                                     <g>
@@ -30,7 +30,7 @@ export default function About() {
                                     </g>
                                 </svg>
                             </div>
-                            <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "8vh" }}>Sip Tours is a project that was born from a shared passion for wine, food, and hospitality. The founders of Sip, Enrico and Dana, recognized that there was a need for a unique and personalized approach to wine tourism that would allow visitors to fully immerse themselves in the local culture, cuisine, and wine scene.</p>
+                            <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "8vh" }}>Sip Tour is a project that was born from a shared passion for wine, food, and hospitality. The founders of Sip, Enrico and Dana, recognized that there was a need for a unique and personalized approach to wine tourism that would allow visitors to fully immerse themselves in the local culture, cuisine, and wine scene.</p>
                         </Row>
                         <Row style={{ backgroundColor: ThemeColor.pinkHome, width: "100%", marginTop: "8vh" }}>
                             <Row style={{ width: "92vw", marginInline: "auto" }}>
@@ -67,7 +67,7 @@ export default function About() {
                         <Row style={{ width: "92vw", marginInline: "auto" }}>
                             <Image
                                 src="/AboutMobile2.webp"
-                                alt="Sip Tours About Page"
+                                alt="Sip Tour About Page"
                                 style={{ width: "100%", height: "auto" }}
                             />
                             <p className="p-home-mobile" style={{ marginTop: "5vh", marginBottom: "8vh" }}>Enrico Pignone - Professional Winemaker Founder and Tour Guide</p>
@@ -93,11 +93,11 @@ export default function About() {
                             <Header />
                             <Image
                                 src="/About1.webp"
-                                alt="Sip Tours About Page"
+                                alt="Sip Tour About Page"
                                 style={{ width: "100%", height: "auto" }}
                             />
                             <Row style={{ width: "92vw", marginInline: "auto", marginTop: "3vw" }}>
-                                <h1 className="h1-home">SIP TOURS</h1>
+                                <h1 className="h1-home">SIP TOUR</h1>
                                 <div style={{ marginTop: "2vw" }}>
                                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                                         <g>
@@ -109,7 +109,7 @@ export default function About() {
                             <Row style={{ width: "92vw", marginInline: "auto", display: "flex", flexDirection: "row", marginTop: "2vw" }}>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}></Col>
                                 <Col style={{ width: "70%", display: "flex", flexDirection: "column" }}>
-                                    <p className="p-home">Sip Tours is a project that was born from a shared passion for wine, food, and hospitality. The founders of Sip, Enrico and Dana, recognized that there was a need for a unique and personalized approach to wine tourism that would allow visitors to fully immerse themselves in the local culture, cuisine, and wine scene.</p>
+                                    <p className="p-home">Sip Tour is a project that was born from a shared passion for wine, food, and hospitality. The founders of Sip, Enrico and Dana, recognized that there was a need for a unique and personalized approach to wine tourism that would allow visitors to fully immerse themselves in the local culture, cuisine, and wine scene.</p>
                                 </Col>
                             </Row>
                             <Row style={{ backgroundColor: ThemeColor.pinkHome, width: "100%", marginTop: "8vw" }}>
@@ -152,7 +152,7 @@ export default function About() {
                                         <Col style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column" }}>
                                             <Image
                                                 src="/Team1.webp"
-                                                alt="Sip Tours About Page"
+                                                alt="Sip Tour About Page"
                                                 style={{ width: "100%", height: "100%" }}
                                             />
                                         </Col>

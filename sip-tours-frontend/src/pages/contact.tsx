@@ -21,7 +21,7 @@ export default function Contact() {
                         <div style={{ position: "relative", marginBottom: "7vw" }}>
                             <Image
                                 src="/Contact1.webp"
-                                alt="Sip Tours About Page"
+                                alt="Sip Tour About Page"
                                 style={{ width: "100%", height: "25vh" }}
                             />
                             <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
@@ -68,7 +68,7 @@ export default function Contact() {
                             <div style={{ position: "relative", marginBottom: "7vw" }}>
                                 <Image
                                     src="/Contact1.webp"
-                                    alt="Sip Tours About Page"
+                                    alt="Sip Tour About Page"
                                     style={{ width: "100%", height: "auto", marginTop: "6vw" }}
                                 />
                                 <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>

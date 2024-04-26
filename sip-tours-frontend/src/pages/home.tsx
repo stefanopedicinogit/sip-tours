@@ -20,7 +20,7 @@ export default function Home() {
           >
             <Image
               src="/HomeMobile1.webp"
-              alt="Sip Tours Home Page"
+              alt="Sip Tour Home Page"
               style={{ width: "100%", height: "auto" }}
             >
             </Image>
@@ -60,7 +60,7 @@ export default function Home() {
             <Row style={{ width: "92vw", marginInline: "auto", marginBottom: "3vh" }}>
               <Image
                 src="/Home2.jpg"
-                alt="Sip Tours Home Page"
+                alt="Sip Tour Home Page"
                 style={{ width: "100%", height: "auto" }}
               />
             </Row>
@@ -77,7 +77,7 @@ export default function Home() {
             <Row style={{ width: "92vw", marginInline: "auto", marginBottom: "3vh" }}>
               <Image
                 src="/HomeMobile3.webp"
-                alt="Sip Tours Home Page"
+                alt="Sip Tour Home Page"
                 style={{ width: "100%", height: "auto" }}
               />
             </Row>
@@ -99,7 +99,7 @@ export default function Home() {
             <Row style={{ width: "92vw", marginInline: "auto", marginBottom: "3vh" }}>
               <Image
                 src="/HomeLisboat.jpg"
-                alt="Sip Tours Home Page"
+                alt="Sip Tour Home Page"
                 style={{ width: "100%", height: "auto" }}
               />
             </Row>
@@ -116,7 +116,7 @@ export default function Home() {
             <Row style={{ width: "92vw", marginInline: "auto", marginBottom: "3vh" }}>
               <Image
                 src="/Home4.jpg"
-                alt="Sip Tours Home Page"
+                alt="Sip Tour Home Page"
                 style={{ width: "100%", height: "auto" }}
               />
             </Row>
@@ -152,7 +152,7 @@ export default function Home() {
               </Row>
               <Image
                 src="/Home1.webp"
-                alt="Sip Tours Home Page"
+                alt="Sip Tour Home Page"
                 style={{ width: "100%", height: "auto" }}
               >
               </Image>
@@ -205,7 +205,7 @@ export default function Home() {
                 <Col style={{ width: "60%" }}>
                   <Image
                     src="/Home2.jpg"
-                    alt="Sip Tours Home Page"
+                    alt="Sip Tour Home Page"
                     style={{ width: "100%", height: "auto" }}
                   />
                 </Col>
@@ -256,7 +256,7 @@ export default function Home() {
                 <Col style={{ width: "60%" }}>
                   <Image
                     src="/Home3.webp"
-                    alt="Sip Tours Home Page"
+                    alt="Sip Tour Home Page"
                     style={{ width: "100%", height: "auto" }}
                   />
                 </Col>
@@ -265,7 +265,7 @@ export default function Home() {
                 <Col style={{ width: "70%" }}>
                   <Image
                     src="/HomeLisboat.jpg"
-                    alt="Sip Tours Home Page"
+                    alt="Sip Tour Home Page"
                     style={{ width: "100%", height: "90vh" }}
                   />
                 </Col>
@@ -294,7 +294,7 @@ export default function Home() {
               <Row style={{ width: "95vw", marginInline: "auto" }}>
                 <Image
                   src="/Home4.jpg"
-                  alt="Sip Tours Home Page"
+                  alt="Sip Tour Home Page"
                   style={{ width: "100%", height: "auto" }}
                 />
               </Row>

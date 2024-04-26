@@ -68,31 +68,31 @@ export default function GlimpseOfSipMobile() {
                     <Row style={{ paddingLeft: "3vw", paddingRight: "3vw", overflowX: "auto", display: "flex", width: "600%", flexDirection: "row", marginInline: "auto", height: "20vh", gap: "3vh", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                         <Image
                             src="/Home1.webp"
-                            alt="Sip Tours Home Page"
+                            alt="Sip Tour Home Page"
                             style={{ width: "80vw" }}
                         >
                         </Image>
                         <Image
                             src="/Home1.webp"
-                            alt="Sip Tours Home Page"
+                            alt="Sip Tour Home Page"
                             style={{ width: "100vw" }}
                         >
                         </Image>
                         <Image
                             src="/Home1.webp"
-                            alt="Sip Tours Home Page"
+                            alt="Sip Tour Home Page"
                             style={{ width: "100vw" }}
                         >
                         </Image>
                         <Image
                             src="/Home1.webp"
-                            alt="Sip Tours Home Page"
+                            alt="Sip Tour Home Page"
                             style={{ width: "100vw" }}
                         >
                         </Image>
                         <Image
                             src="/Home1.webp"
-                            alt="Sip Tours Home Page"
+                            alt="Sip Tour Home Page"
                             style={{ width: "100vw" }}
                         >
                         </Image>

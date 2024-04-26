@@ -33,7 +33,7 @@ export default function VideoStart() {
         <div className="hide-scroll video-container" style={{ width:"120vw", position: 'relative' }}>
           <VideoPlayer />
           <h1 className="white" style={{ fontFamily: "Helvetica, Arial, sans-serif", fontWeight: "400", fontSize: "4vw", lineHeight: "4vw", position: 'absolute', top: '25%', left: '42.5%', transform: 'translate(-50%, -50%)', zIndex: 1 }}>
-            WELCOME <br /> SIP TOURS
+            WELCOME <br /> SIP TOUR
           </h1>
           <h2 className="white" style={{ fontFamily: "Helvetica, Arial, sans-serif", fontSize: "1.7vw", position: 'absolute', top: '35%', left: '42.5%', transform: 'translate(-50%, -50%)', zIndex: 1 }}>
             EXPERIENCE PORTUGAL
@@ -53,7 +53,7 @@ export default function VideoStart() {
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             <div style={{ position: "absolute", top: "20%" }}>
               <h1 className="white" style={{ fontFamily: "Helvetica, Arial, sans-serif", fontWeight: "400", fontSize: "15vw", lineHeight: "15vw", zIndex: 1 }}>
-                WELCOME <br /> SIP TOURS
+                WELCOME <br /> SIP TOUR
               </h1>
               <h2 className="white" style={{ fontFamily: "Helvetica, Arial, sans-serif", fontSize: "6.5vw", zIndex: 1 }}>
                 EXPERIENCE PORTUGAL

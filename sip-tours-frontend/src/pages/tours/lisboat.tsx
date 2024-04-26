@@ -133,12 +133,12 @@ export default function Lisboat() {
                                 <div style={{ display: "flex", flexDirection: "row", gap: "4vw", width: `${sumWidth}%` }}>
                                     <Row style={{ paddingLeft: "3vw", paddingRight: "3vw", overflowX: "auto", display: "flex", width: `${galleryWidth}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                         {imagePaths.map((path, index) => (
-                                            <Image key={index} src={path} alt="Sip tours Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
                                         ))}
                                     </Row>
                                     <Row style={{ paddingLeft: "3vw", paddingRight: "3vw", overflowX: "auto", display: "flex", width: `${galleryWidth2}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                         {imagePaths2.map((path, index) => (
-                                            <Image key={index} src={path} alt="Sip tours Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
                                         ))}
                                     </Row>
                                 </div>
