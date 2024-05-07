@@ -52,7 +52,7 @@ export default function GlipseOfSip() {
         return (
             <>
                 <Spinner animation="border" role="status" />
-                <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBOA</h1>
+                <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBON</h1>
             </>
         );
     }
@@ -65,13 +65,13 @@ export default function GlipseOfSip() {
                         <Layout fullWidth fullHeight>
                             <div className="gray-opacity">
                                 <Col style={{ width: "40vw" }}>
-                                    <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBOA</h1>
+                                    <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBON</h1>
                                 </Col>
                                 <Fade triggerOnce duration={9000}>
                                     <Image
                                         src="/Bacchus1.jpg"
-                                        alt="SIP Tour Bacchus Lisboa"
-                                        title="SIP Tour Bacchus Lisboa"
+                                        alt="SIP Tour Bacchus Lisbon"
+                                        title="SIP Tour Bacchus Lisbon"
                                         style={{
                                             position: "absolute",
                                             top: 0,
@@ -89,7 +89,7 @@ export default function GlipseOfSip() {
                             <div style={{ position: "relative", height: "7vw" }}></div>
                             <Row style={{ width: "92vw", marginInline: "auto", display: "flex", flexDirection: "row", gap: "10vw" }}>
                                 <Col style={{ display: "flex", flexDirection: "column", width: "70%" }}>
-                                    <h1 className="h1-home roboto" style={{ fontSize: "3.55vw", color: "white", lineHeight: "3.75vw" }}>BACCHUS LISBOA</h1>
+                                    <h1 className="h1-home roboto" style={{ fontSize: "3.55vw", color: "white", lineHeight: "3.75vw" }}>BACCHUS LISBON</h1>
                                     <div style={{ marginTop: "1.5vw", marginBottom: "3vw" }}>
                                         <svg fill="white" preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                                             <g>
@@ -131,12 +131,12 @@ export default function GlipseOfSip() {
                                 <div style={{ display: "flex", flexDirection: "row", gap: "4vw", width: `${sumWidth}%` }}>
                                     <Row style={{ paddingLeft: "3vw", paddingRight: "3vw", overflowX: "auto", display: "flex", width: `${galleryWidth}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                         {imagePaths.map((path, index) => (
-                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisbon Gallery" style={{ width: "80%", height: "auto" }} />
                                         ))}
                                     </Row>
                                     <Row style={{ paddingLeft: "3vw", paddingRight: "3vw", overflowX: "auto", display: "flex", width: `${galleryWidth2}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                         {imagePaths2.map((path, index) => (
-                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisbon Gallery" style={{ width: "80%", height: "auto" }} />
                                         ))}
                                     </Row>
                                 </div>

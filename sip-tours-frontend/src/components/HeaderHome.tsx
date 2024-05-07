@@ -232,7 +232,7 @@ export default function HeaderHome() {
                     <button onClick={() => navigate("/home")}>Home</button>
                   </MenuDrawerNavigationItem>
                   <MenuDrawerNavigationItem>
-                    <button onClick={() => navigate("/about")}>About Us</button>
+                    <button onClick={() => navigate("/about")}>About SIP</button>
                   </MenuDrawerNavigationItem>
                   <MenuDrawerNavigationItem>
                     <button onClick={() => navigate("/services")}>Services</button>

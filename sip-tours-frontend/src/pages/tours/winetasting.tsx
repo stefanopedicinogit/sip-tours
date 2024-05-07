@@ -105,7 +105,7 @@ export default function WineTasting() {
                             </Row>
                             <Row style={{ paddingLeft: "3vw", paddingRight: "1vw", overflowX: "auto", display: "flex", width: `${galleryWidth}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                 {imagePaths.map((path, index) => (
-                                    <Image key={index} src={path} alt="Sip tour Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                    <Image key={index} src={path} alt="Sip tour Wine Tasting Gallery" style={{ width: "80%", height: "auto" }} />
                                 ))}
                             </Row>
                         </Layout>

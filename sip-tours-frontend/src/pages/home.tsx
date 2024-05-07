@@ -43,7 +43,7 @@ export default function Home() {
               <Button
                 className="button-rounded-black-mobile clickable"
                 onClick={() => navigate("/about")}>
-                About Us
+                About SIP
               </Button>
             </Row>
             <Row style={{ width: "92vw", marginInline: "auto", marginBottom: "3vh" }}>
@@ -65,7 +65,7 @@ export default function Home() {
               />
             </Row>
             <Row style={{ width: "92vw", marginInline: "auto", marginBottom: "3vh" }}>
-              <h1 className="h1-home-mobile" style={{ textDecoration: "underline" }}>BACCHUS LISBOA</h1>
+              <h1 className="h1-home-mobile" style={{ textDecoration: "underline" }}>BACCHUS LISBON</h1>
             </Row>
             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginTop: "3vh", marginBottom: "8vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
               <Button
@@ -166,7 +166,7 @@ export default function Home() {
                     <Button
                       onClick={() => navigate("/about")}
                       className="button-rounded-black clickable">
-                      About Us
+                      About SIP
                     </Button>
                   </div>
                 </Col>
@@ -213,7 +213,7 @@ export default function Home() {
                   <Row style={{ display: "flex", flexDirection: "row" }}>
                     <Col style={{ width: "40%" }}></Col>
                     <Col style={{ marginTop: "70%", width: "50%" }}>
-                      <h1 className="h1-home" style={{ fontWeight: "400", lineHeight: "1" }}>BACCHUS LISBOA</h1>
+                      <h1 className="h1-home" style={{ fontWeight: "400", lineHeight: "1" }}>BACCHUS LISBON</h1>
                       <Button
                         className="underlined clickable p-home"
                         onClick={() => navigate("/tours/bacchuslisboa")}

@@ -39,7 +39,7 @@ export default function Services() {
                                 style={{ width: "95vw", marginInline: "auto", height: "70vh" }}
                             />
                             <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "3vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
-                                <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Private Wein Tasting</p>
+                                <p style={{ marginTop: "2.5vh", fontSize: "2.5vh" }} className="p-home-mobile">Private Food & Wine Tasting</p>
                             </Row>
                         </Row>
                         <Row>
@@ -107,7 +107,7 @@ export default function Services() {
                                         className="clickable"
                                         onClick={() => navigate("/tours/winetasting")}
                                     >
-                                        Private Wine Tasting
+                                        Private Food & Wine Tasting
                                     </p>
                                 </Col>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>

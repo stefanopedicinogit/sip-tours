@@ -53,7 +53,7 @@ export default function GlipseOfSip() {
         return (
             <>
                 <Spinner animation="border" role="status" />
-                <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBOA</h1>
+                <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBON</h1>
             </>
         );
     }

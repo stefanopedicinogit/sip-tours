@@ -52,7 +52,7 @@ export default function TailorMadeExperience() {
         return (
             <>
                 <Spinner animation="border" role="status" />
-                <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBOA</h1>
+                <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "8vw", position: "absolute", lineHeight: "3.75vw" }}>BACCHUS LISBON</h1>
             </>
         );
     }
@@ -134,12 +134,12 @@ export default function TailorMadeExperience() {
                                 <div style={{ display: "flex", flexDirection: "row", gap: "1vw", width: `${sumWidth}%` }}>
                                     <Row style={{ paddingLeft: "3vw", paddingRight: "2vw", overflowX: "auto", display: "flex", width: `${galleryWidth}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                         {imagePaths.map((path, index) => (
-                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisbon Gallery" style={{ width: "80%", height: "auto" }} />
                                         ))}
                                     </Row>
                                     <Row style={{ paddingLeft: "3vw", paddingRight: "3vw", overflowX: "auto", display: "flex", width: `${galleryWidth2}vw`, flexDirection: "row", marginInline: "auto", height: "40vw", gap: "4vw", scrollbarWidth: "none", /* Firefox */ WebkitOverflowScrolling: "touch" }}>
                                         {imagePaths2.map((path, index) => (
-                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisboa Gallery" style={{ width: "80%", height: "auto" }} />
+                                            <Image key={index} src={path} alt="Sip tour Bacchus Lisbon Gallery" style={{ width: "80%", height: "auto" }} />
                                         ))}
                                     </Row>
                                 </div>

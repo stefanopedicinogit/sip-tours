@@ -30,7 +30,7 @@ export default function About() {
                                     </g>
                                 </svg>
                             </div>
-                            <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "8vh" }}>Sip Tour is a project that was born from a shared passion for wine, food, and hospitality. The founders of Sip, Enrico and Dana, recognized that there was a need for a unique and personalized approach to wine tourism that would allow visitors to fully immerse themselves in the local culture, cuisine, and wine scene.</p>
+                            <p className="p-home-mobile" style={{ marginTop: "8vh", marginBottom: "8vh" }}>Sip Tour is a project that was born from a shared passion for wine, food, and hospitality. The founder of Sip, Enrico, recognized that there was a need for a unique and personalized approach to wine tourism that would allow visitors to fully immerse themselves in the local culture, cuisine, and wine scene.</p>
                         </Row>
                         <Row style={{ backgroundColor: ThemeColor.pinkHome, width: "100%", marginTop: "8vh" }}>
                             <Row style={{ width: "92vw", marginInline: "auto" }}>
@@ -54,16 +54,6 @@ export default function About() {
                                 </Col>
                             </Row>
                         </Row>
-                        <Row style={{ marginTop: "8vh", width: "92vw", marginInline: "auto", marginBottom: "6vh" }}>
-                            <h1 className="h1-home-mobile">THIS IS US</h1>
-                            <div style={{ marginTop: "3vh" }}>
-                                <svg preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
-                                    <g>
-                                        <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
-                                    </g>
-                                </svg>
-                            </div>
-                        </Row>
                         <Row style={{ width: "92vw", marginInline: "auto" }}>
                             <Image
                                 src="/AboutMobile2.webp"
@@ -71,7 +61,7 @@ export default function About() {
                                 style={{ width: "100%", height: "auto" }}
                             />
                             <p className="p-home-mobile" style={{ marginTop: "5vh", marginBottom: "8vh" }}>Enrico Pignone - Professional Winemaker Founder and Tour Guide</p>
-                            <p className="p-home-mobile" style={{ marginBottom: "15vh" }}>Enrico Pignone is a highly skilled and accomplished wine maker, with a strong background in viticulture and oenology. He received a double degree Masters from the University of Turin and the Instituto Superior de Agronomia in Lisbon, and has been working in the wine industry in Italy and Portugal ever since. As the creator of RICO wines, Enrico is known for his expertise in crafting high-quality and distinctive wines that showcase the unique character of the local region. With a deep understanding of the wine-making process and a strong commitment to producing exceptional wines, Enrico is a respected and influential figure in the world of wine.</p>
+                            <p className="p-home-mobile" style={{ marginBottom: "15vh" }}>After earning my double degree in Viticulture and Enology from the universities of Asti (DISAFA) and Lisbon (ISA), I fell in love with Portugal! My professional journey has taken me through various roles, from assisting winemakers to driving sales and product development for the B2B food and beverage market. Alongside establishing the Rico Pignonè wines and olive oil brand from the Douro Superior, I founded Sip food and wine tours to offer exclusive experiences, sharing my profound passion for this country and immersing everyone in the essence of Portuguese culture, from its art to its cuisine, wines, and vibrant local communities. I firmly believe that exploring Portugal's food and wine culture is the most authentic and captivating way to connect with its "sense of place". Beyond business pursuits, I revel in reading books, listening to music, strumming the guitar, traveling, staying active, and cherishing moments that linger in memory.</p>
                         </Row>
                         <Row style={{ width: "100vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "15vh", alignContent: "center", justifyContent: "center", alignItems: "center" }}>
                             <Button
@@ -109,7 +99,7 @@ export default function About() {
                             <Row style={{ width: "92vw", marginInline: "auto", display: "flex", flexDirection: "row", marginTop: "2vw" }}>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}></Col>
                                 <Col style={{ width: "70%", display: "flex", flexDirection: "column" }}>
-                                    <p className="p-home">Sip Tour is a project that was born from a shared passion for wine, food, and hospitality. The founders of Sip, Enrico and Dana, recognized that there was a need for a unique and personalized approach to wine tourism that would allow visitors to fully immerse themselves in the local culture, cuisine, and wine scene.</p>
+                                    <p className="p-home">Sip Tour is a project that was born from a shared passion for wine, food, and hospitality. The founder of Sip, Enrico, recognized that there was a need for a unique and personalized approach to wine tourism that would allow visitors to fully immerse themselves in the local culture, cuisine, and wine scene.</p>
                                 </Col>
                             </Row>
                             <Row style={{ backgroundColor: ThemeColor.pinkHome, width: "100%", marginTop: "8vw" }}>
@@ -135,18 +125,9 @@ export default function About() {
                                     </Col>
                                 </Row>
                             </Row>
-                            <Row style={{ width: "92vw", marginInline: "auto", marginTop: "3vw" }}>
-                                <h1 className="h1-home">THIS IS US</h1>
-                                <div style={{ marginTop: "2vw" }}>
-                                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
-                                        <g>
-                                            <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
-                                        </g>
-                                    </svg>
-                                </div>
-                            </Row>
                             <Row style={{ width: "92vw", marginInline: "auto", display: "flex", flexDirection: "row", marginTop: "2vw", marginBottom: "8vw" }}>
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}></Col>
+                                <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}></Col> 
                                 <Col style={{ width: "100%", display: "flex", flexDirection: "column" }}>
                                     <Row style={{ width: "100%", height: "25vw", display: "flex", flexDirection: "row", gap: "3vw", marginBottom: "3vw" }}>
                                         <Col style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column" }}>
@@ -159,8 +140,8 @@ export default function About() {
                                     </Row>
                                     <Row style={{ width: "100%", display: "flex", flexDirection: "row", gap: "3vw", marginBottom: "3vw" }}>
                                         <Col style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "2vw" }}>
-                                            <p className="p-home">Enrico Pignone - Professional Winemaker Founder and Tour Guide</p>
-                                            <p className="p-home">Enrico Pignone is a highly skilled and accomplished wine maker, with a strong background in viticulture and oenology. He received a double degree Masters from the University of Turin and the Instituto Superior de Agronomia in Lisbon, and has been working in the wine industry in Italy and Portugal ever since. As the creator of RICO wines, Enrico is known for his expertise in crafting high-quality and distinctive wines that showcase the unique character of the local region. With a deep understanding of the wine-making process and a strong commitment to producing exceptional wines, Enrico is a respected and influential figure in the world of wine.</p>
+                                            <p className="p-home">Enrico Pignone - Founder, Winemaker and Tour Guide</p>
+                                            <p className="p-home">After earning my double degree in Viticulture and Enology from the universities of Asti (DISAFA) and Lisbon (ISA), I fell in love with Portugal! My professional journey has taken me through various roles, from assisting winemakers to driving sales and product development for the B2B food and beverage market. Alongside establishing the Rico Pignonè wines and olive oil brand from the Douro Superior, I founded Sip food and wine tours to offer exclusive experiences, sharing my profound passion for this country and immersing everyone in the essence of Portuguese culture, from its art to its cuisine, wines, and vibrant local communities. I firmly believe that exploring Portugal's food and wine culture is the most authentic and captivating way to connect with its "sense of place". Beyond business pursuits, I revel in reading books, listening to music, strumming the guitar, traveling, staying active, and cherishing moments that linger in memory.</p>
                                         </Col>
                                     </Row>
                                 </Col>
