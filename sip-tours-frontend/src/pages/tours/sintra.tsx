@@ -66,7 +66,7 @@ export default function Sintra() {
                         <Layout fullWidth fullHeight>
                             <div className="gray-opacity">
                                 <Col style={{ width: "40vw" }}>
-                                    <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "5vw", position: "absolute", lineHeight: "3.75vw" }}>SINTRA</h1>
+                                    <h1 className="h1-home transition-image roboto" style={{ zIndex: 10, top: "15vw", marginLeft: "5vw", position: "absolute", lineHeight: "3.75vw" }}>MEMORABLE SINTRA</h1>
                                 </Col>
                                 <Fade triggerOnce duration={9000}>
                                     <Image
@@ -90,7 +90,7 @@ export default function Sintra() {
                                 <div style={{ position: "relative", height: "7vw" }}></div>
                                 <Row style={{ width: "92vw", marginInline: "auto", display: "flex", flexDirection: "row", gap: "10vw" }}>
                                     <Col style={{ display: "flex", flexDirection: "column", width: "70%" }}>
-                                        <h1 className="h1-home roboto" style={{ fontSize: "3.55vw", color: "white", lineHeight: "3.75vw" }}>SINTRA TOUR</h1>
+                                        <h1 className="h1-home roboto" style={{ fontSize: "3.55vw", color: "white", lineHeight: "3.75vw" }}>MEMORABLE SINTRA</h1>
                                         <div style={{ marginTop: "1.5vw", marginBottom: "3vw" }}>
                                             <svg fill="white" preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
                                                 <g>
@@ -125,7 +125,7 @@ export default function Sintra() {
                                     </Col>
                                     <Col style={{ display: "flex", flexDirection: "column", width: "100%" }}>
                                         <h3 style={{ color: "white", textDecoration: "underline", marginBottom: "1.5vw" }} className="h3-home roboto">About</h3>
-                                        <p style={{ marginBottom: "1.5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Nestled amidst lush green hills and dotted with fairytale-like palaces and castles, Sintra is a destination that captivates the imagination. This UNESCO World Heritage Site in Portugal is a treasure trove of history, culture, and natural beauty. As you wander through its narrow cobblestone streets, you'll be transported to a bygone era, where legends come to life and every corner reveals a new enchantment. Explore the majestic Pena Palace, with its vibrant colors and stunning panoramic views, or wander through the mystical Quinta da Regaleira, an estate filled with secret passages and hidden symbols. From the charming town center to the breathtaking landscapes of the Sintra-Cascais Natural Park, Sintra offers a unique and unforgettable experience. Let Sip Tour be your guide as we uncover the secrets of Sintra and create memories that will last a lifetime."}</p>
+                                        <p style={{ marginBottom: "1.5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Experience the magic of Sintra with Sip Tour! Our half-day journey combines captivating sights with delightful flavors, visiting the guardians of authentic craft food and wine making. Exclusive stops include a visit to a local cheese farm, wineries, the beautiful Biester castle, and a special wine tasting experience at a local wine bar in Sintra village. Immerse yourself in the rich history and culture of Sintra as we partner with local businesses for an authentic and immersive day. Join us on this extraordinary journey and create unforgettable memories with Sip Tour!"}</p>
                                         <p style={{ marginBottom: "5vw", fontWeight: "400", fontSize: "1.25vw" }} className="white roboto">{"Experience the magic of Sintra with Sip Tour! Our half-day journey combines captivating sights with delightful flavors. Optional stops include a visit to a local winery or a cheese farm, and we'll also make a special stop at a local bar for a wine tasting experience. Immerse yourself in the rich history and culture of Sintra as we partner with local businesses for an authentic and immersive experience. Join us on this extraordinary journey and create unforgettable memories with Sip Tour."}</p>
                                     </Col>
                                 </Row>

@@ -100,7 +100,7 @@ export default function GlipseOfSip() {
                                     <Row style={{ display: "flex", flexDirection: "row", width: "100%", gap: "2vw", marginBottom: "3vw" }}>
                                         <Col style={{ width: "100%", display: "flex", flexDirection: "column", color: "white" }}>
                                             <p style={{ textDecoration: "underline", marginBottom: "1vw" }}>Size</p>
-                                            <p>Up to 25 people / Private groups</p>
+                                            <p>Up to 12 people / Private groups</p>
                                         </Col>
                                         <Col style={{ width: "100%", display: "flex", flexDirection: "column", color: "white" }}>
                                             <p style={{ textDecoration: "underline", marginBottom: "1vw" }}>Location</p>
