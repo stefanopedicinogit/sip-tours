@@ -285,7 +285,7 @@ export default function HeaderHome() {
                   <h5>Working&nbsp;all&nbsp;around&nbsp;Portugal</h5>
                   <h5>Based&nbsp;in&nbsp;Lisbon</h5>
                 </div>
-                <span style={{ textDecoration: 'underline', fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw" }}>info@sip-tours.com</span>
+                <span style={{ textDecoration: 'underline', fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw" }}>info@sip-tour.com</span>
                 <ul style={{ fontFamily: "Helvetica, Arial, sans-serif", color: 'white', fontSize: "2vw", marginTop: "3vw" }} className="clickable">
                   <li
                     style={{ display: "flex", flexDirection: "row", gap: "2vw" }}

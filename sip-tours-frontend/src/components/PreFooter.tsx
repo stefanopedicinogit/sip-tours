@@ -12,7 +12,7 @@ export default function PreFooter() {
           <Row style={{ width: "95vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "10vw" }}>
             <Col style={{ width: "80%" }}>
               <h2 className="h2-home" style={{ fontSize: "2vh", marginBottom: "2.5vw" }}>Find us all around Portugal<br />Based in Lisbon</h2>
-              <h2 className="h2-home" style={{ fontSize: "2vh", textDecoration: "underline", marginBottom: "2.5vw" }}>info@sip-tours.com</h2>
+              <h2 className="h2-home" style={{ fontSize: "2vh", textDecoration: "underline", marginBottom: "2.5vw" }}>info@sip-tour.com</h2>
               <h2 className="h2-home" style={{ fontSize: "2vh" }}>Tel: +351 964 212 524</h2>
             </Col>
             <Col style={{ width: "30%", display: "flex", flexDirection: "column", justifyContent: "right", alignItems: "right" }}>
@@ -75,7 +75,7 @@ export default function PreFooter() {
             <Row style={{ width: "95vw", marginInline: "auto", display: "flex", flexDirection: "row", marginBottom: "10vw" }}>
               <Col style={{ width: "80%" }}>
                 <h2 className="h2-home" style={{ marginBottom: "2.5vw" }}>Find us all around Portugal<br />Based in Lisbon</h2>
-                <h2 className="h2-home" style={{ textDecoration: "underline", marginBottom: "2.5vw" }}>info@sip-tours.com</h2>
+                <h2 className="h2-home" style={{ textDecoration: "underline", marginBottom: "2.5vw" }}>info@sip-tour.com</h2>
                 <h2 className="h2-home">Tel: +351 964 212 524</h2>
               </Col>
               <Col style={{ width: "20%", display: "flex", flexDirection: "column", justifyContent: "right", alignItems: "right" }}>
