@@ -30,7 +30,7 @@ export default function Home() {
             </Row>
             <Row style={{ display: "flex", flexDirection: "row", width: "90vw", marginInline: "auto", marginTop: "2vh", marginBottom: "15vh" }}>
               <Button
-                onClick={() => navigate("/contact")}
+                onClick={() => navigate("https://widgets.bokun.io/online-sales/588c1b69-7997-48e3-822a-e741385d1278/experience/884960?partialView=1")}
                 className="button-rounded-black-mobile clickable">
                 Book Now
               </Button>
@@ -144,7 +144,7 @@ export default function Home() {
                 <h3 className="h3-home">Explore the flavours of Portugal and experience our unique culture and history. </h3>
                 <div style={{ marginTop: "2vw", marginBottom: "3.5vw" }}>
                   <Button
-                    onClick={() => navigate("/contact")}
+                    onClick={() => navigate("https://widgets.bokun.io/online-sales/588c1b69-7997-48e3-822a-e741385d1278/experience/884960?partialView=1")}
                     className="button-rounded-black clickable">
                     Book Now
                   </Button>

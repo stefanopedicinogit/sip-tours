@@ -284,7 +284,7 @@ export default function Header() {
                         <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
                       </g>
                     </svg>
-                    Book Now
+                    Contact
                   </li>
                   <li
                     style={{ display: "flex", flexDirection: "row", gap: "2vw" }}
@@ -371,7 +371,7 @@ export default function Header() {
                   style={{ marginTop: "0.5vw" }}
                   onClick={() => navigate('/contact')}
                 >
-                  Book Now
+                  Contact
                 </Button>
                 <FontAwesomeIcon color="white" className="clickable" icon={faBars} size="2x" onClick={() => { setShowNavModal(!showNavModal) }} />
               </HeaderNavigation>
