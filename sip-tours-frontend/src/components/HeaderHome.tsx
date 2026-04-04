@@ -377,12 +377,23 @@ export default function HeaderHome() {
                     </svg>
                   </div>
                 </HeaderNavigationItem>
-
+                <HeaderNavigationItem
+                  onClick={() => navigate('/reviews')}
+                >
+                  <div style={{ display: "flex", flexDirection: "row", gap: "1vw" }} onClick={() => { navigate("/reviews") }}>
+                    Reviews
+                    <svg style={{ transform: "rotate(90deg)", marginTop: "0.5vw" }} preserveAspectRatio="xMidYMid meet" data-bbox="19.2 22.3 160.1 158.5" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="19.2 22.3 160.1 158.5" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                      <g>
+                        <path d="M88.5 22.3v5.8h80.9L19.2 176.7l4.1 4.1L173.6 32.1v80.2h5.7v-90H88.5z"></path>
+                      </g>
+                    </svg>
+                  </div>
+                </HeaderNavigationItem>
                 <Button
-                  className="button-rounded-black clickable" 
+                  className="button-rounded-black clickable"
                   style={{ marginTop: "0.5vw" }}
                   onClick={() => navigate('/contact')}
-                  >
+                >
                   Contact
                 </Button>
                 <FontAwesomeIcon className="clickable" icon={faBars} size="2x" onClick={() => { setShowNavModal(!showNavModal) }} />
